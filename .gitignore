@@ -39,7 +39,7 @@ wp-content/languages/themes/twenty*
 # theme specific
 wp-content/themes/*/node_modules/
 
-# wpengine specific
+# wpengine specific ignores
 .smushit-status
 .gitattributes
 _wpeprivate
