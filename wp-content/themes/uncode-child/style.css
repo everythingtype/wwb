@@ -7,3 +7,26 @@ Template: uncode
 Version: 1.0.0
 Text Domain: uncode
 */
+
+@font-face{
+  font-family: 'LeMondeLivrePro';
+  src: url('fonts/LeMondeLivrePro-Regular.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'LeMondeLivrePro';
+  font-weight: bold;
+  src: url('fonts/LeMondeLivrePro-Bold.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'LeMondeLivrePro';
+  font-style: italic;
+  src: url('fonts/LeMondeLivrePro-Italic.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'LeMondeLivrePro';
+  font-weight: 500;
+  src: url('fonts/LeMondeLivrePro-Book.otf') format("opentype");
+}
