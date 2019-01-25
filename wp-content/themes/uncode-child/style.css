@@ -226,3 +226,9 @@ h5, p {
 .newsletter-form h2 {
   padding-top: 15px;
 }
+
+.newsletter-form .wpcf7-form .btn {
+  width: 252px;
+  background-color: #c79900 !important;
+  color: white !important;
+}
