@@ -30,3 +30,199 @@ Text Domain: uncode
   font-weight: 500;
   src: url('fonts/LeMondeLivrePro-Book.otf') format("opentype");
 }
+
+h1, h2, h3, h4 {
+  font-family: LeMondeLivrePro;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+h4 {
+  letter-spacing: -0.3px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+h5, p {
+  font-family: 'Helvetica Neue';
+}
+
+.btn {
+  padding: 5px 30px 7px !important;
+}
+
+.btn.btn-flat {
+  background-color: white !important;
+  color: #c79900 !important;
+  border: 1px solid #c79900 !important;
+}
+
+.btn.btn-flat-gold {
+  background-color: #c79900 !important;
+  color: white !important;
+}
+
+.hero-header {
+  max-width: 820px;
+  margin: auto;
+}
+
+.hero-subheader {
+  max-width: 860px;
+  margin: auto;
+}
+
+.hero-header h1 {
+  font-weight: 500 !important;
+  color: white !important;
+}
+
+.hero-subheader p {
+  color: white !important;
+}
+
+.post-info .author-info { 
+  display: none;
+}
+
+.event-card {
+  color: white !important;
+}
+
+.event-card .rsvp-info {
+  color: white !important;
+}
+
+.event-card .rsvp-info h2 {
+  font-weight: 500 !important; /* Book typeface */
+  letter-spacing: -2px;
+}
+
+.event-card .rsvp-info h4 {
+  letter-spacing: -2px;
+}
+
+.event-card .rsvp-info .uncont {
+  max-width: 300px;
+}
+
+.homepage-card-full-row .row .row-inner, .homepage-card-cells .uncol .uncell {
+  background-color: #ffffff;
+  border-top: 10px solid #c79900 !important;
+  padding: 35px 20px 56px 54px !important;
+}
+
+.homepage-card-info {
+  color: #c79900 !important;
+}
+
+.homepage-card-info h2 {
+  padding-right: 85px;
+}
+
+.homepage-card-info h4 {
+  color: #4d4f53 !important;
+  letter-spacing: -0.3px;
+}
+
+.card-round-gold-section .uncell .uncont {
+  border: 1px solid #c79900;
+  border-radius: 200px;
+  width: 280px;
+  height: 280px;
+  color: #4d4f53 !important;
+  padding-top: 15px;
+}
+
+.card-round-gold-section .uncell .uncont p {
+  margin: 0px;
+}
+
+.card-round-gold-section .uncell .uncont h2 {
+  margin-top: 10px;
+  padding-right: 0px;
+}
+
+.card-cell-text {
+  min-height: 430px;
+}
+
+.impact-section {
+  color: #757575;
+}
+
+.impact-section p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 22px;
+  color: #4D4F53;
+  letter-spacing: -0.55px;
+  line-height: 30px;
+}
+
+.impact-section .icon-box-heading h4 {
+  color: #4D4F53;
+}
+
+.impact-section .icon-box-icon {
+  padding-top: 5px;
+}
+
+.impact-section .icon-box-icon img {
+  max-width: 37px !important;
+}
+
+.impact-section .icon-box-content {
+  padding-left: 21px;
+}
+
+.isotope-container .tmb .t-inside .t-entry-date {
+  font-family: 'LeMondeLivrePro';
+  color: #4D4F53;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.isotope-container .tmb .t-inside .t-entry-category a {
+  font-family: 'LeMondeLivrePro';
+  color: #CEA62A;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.isotope-container .tmb .t-inside .t-entry-category .fa {
+  display: none;
+}
+
+.isotope-container .tmb .t-inside .t-entry-title a {
+  font-family: 'LeMondeLivrePro';
+  color: #4D4F53;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.55px;
+  line-height: 30px;
+}
+
+.hero-phrase h2 {
+  color: #ffffff;
+  padding: 0 7%;
+}
+
+.newsletter-form h5 {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+.newsletter-form .heading-text {
+  margin-top: 0px !important;
+}
+
+.newsletter-form h4 {
+  padding-top: 10px;
+}
+
+.newsletter-form h2 {
+  padding-top: 15px;
+}
