@@ -35,22 +35,36 @@ h1, h2, h3, h4 {
   font-family: LeMondeLivrePro;
   font-weight: normal;
   letter-spacing: -2px;
+  line-height: 0.96;
 }
 
 h4 {
   letter-spacing: -0.3px;
+  line-height: 1.36;
 }
 
 h5 {
   font-weight: bold;
+  letter-spacing: 1.4px;
+  line-height: 1.43;
 }
 
 h5, p {
   font-family: 'Helvetica Neue';
 }
 
+.btn-container {
+  margin-top: 11px !important;
+}
+
+.style-light .btn-default:not(.btn-hover-nobg):hover {
+  background-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
 .btn {
   padding: 5px 30px 7px !important;
+  border-radius: 2px !important;
 }
 
 .btn.btn-flat {
@@ -59,9 +73,74 @@ h5, p {
   border: 1px solid #c79900 !important;
 }
 
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:hover {
+  background-color: white !important;
+  color: #D8B85C !important;
+  border: 1px solid #D8B85C !important;
+}
+
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:active {
+  background-color: white !important;
+  color: #c79900 !important;
+  border: 1px solid #979797 !important;
+}
+
 .btn.btn-flat-gold {
   background-color: #c79900 !important;
   color: white !important;
+}
+
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover {
+  background-color: #D8B85C !important;
+  color: white !important;
+}
+
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active {
+  background-color: #c79900 !important;
+  color: white !important;
+  border: 1px solid #979797 !important;
+}
+
+.row-content-container .row {
+  max-width: 928px !important;
+}
+
+header.navbar, header.navbar .menu-container {
+  background-color: #00338d;
+}
+
+header.navbar .menu-item a, header.navbar .menu-item a:hover {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.08;
+  letter-spacing: 0.7px;
+  font-family: 'HelveticaNeue';
+}
+
+footer {
+  background-color: #4d4f53;
+}
+
+.menu-footer-menu-container {
+  text-align: center;
+}
+
+.menu-footer-menu-container li a, .menu-footer-menu-container li a:hover {
+  color: #ffffff;
+  font-family: 'LeMondeLivrePro';
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+}
+
+.menu-btn-container {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+li.menu-item-button::before, i.menu-item-button::after {
+  height: calc(50% - ( 5px + 0.5em ));
 }
 
 .hero-header {
@@ -98,20 +177,29 @@ h5, p {
 .event-card .rsvp-info h2 {
   font-weight: 500 !important; /* Book typeface */
   letter-spacing: -2px;
+  margin-top: 12px;
 }
 
 .event-card .rsvp-info h4 {
   letter-spacing: -2px;
 }
 
+.event-card .rsvp-info .uncell {
+  padding-top: 50px;
+}
+
 .event-card .rsvp-info .uncont {
   max-width: 300px;
+}
+
+.event-card .rsvp-info .uncode_text_column {
+  margin-bottom: 20px;
 }
 
 .homepage-card-full-row .row .row-inner, .homepage-card-cells .uncol .uncell {
   background-color: #ffffff;
   border-top: 10px solid #c79900 !important;
-  padding: 35px 20px 56px 54px !important;
+  padding: 35px 48px 53px 51px !important;
 }
 
 .homepage-card-info {
@@ -130,23 +218,42 @@ h5, p {
 .card-round-gold-section .uncell .uncont {
   border: 1px solid #c79900;
   border-radius: 200px;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   color: #4d4f53 !important;
-  padding-top: 15px;
+  padding-top: 10px;
+}
+
+.card-round-gold-section .uncell .uncont .uncode_text_column {
+  width: 200px;
+  margin: 0 auto;
 }
 
 .card-round-gold-section .uncell .uncont p {
   margin: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .card-round-gold-section .uncell .uncont h2 {
   margin-top: 10px;
   padding-right: 0px;
+  font-size: 54px;
+  letter-spacing: -2.7px;
+  font-weight: 500 !important; /* Book typeface */
+  margin-bottom: 7px;
+}
+
+.billion {
+  line-height: 1.09;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: normal;
 }
 
 .card-cell-text {
-  min-height: 430px;
+  min-height: 444px;
 }
 
 .impact-section {
@@ -159,6 +266,10 @@ h5, p {
   color: #4D4F53;
   letter-spacing: -0.55px;
   line-height: 30px;
+}
+
+.impact-section h2 {
+  margin-top: 3px;
 }
 
 .impact-section .icon-box-heading h4 {
@@ -174,7 +285,7 @@ h5, p {
 }
 
 .impact-section .icon-box-content {
-  padding-left: 21px;
+  padding-left: 19px;
 }
 
 .isotope-container .tmb .t-inside .t-entry-date {
@@ -207,7 +318,9 @@ h5, p {
 
 .hero-phrase h2 {
   color: #ffffff;
-  padding: 0 7%;
+  max-width: 971px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .newsletter-form h5 {
