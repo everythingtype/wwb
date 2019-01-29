@@ -105,11 +105,23 @@ h5, p {
   max-width: 928px !important;
 }
 
+.menu-sticky {
+  background-color: #00338d;
+}
+
+header .logo-container, header .logo-container.shrinked {
+  padding: 10px 0px;
+}
+
 header.navbar, header.navbar .menu-container {
   background-color: #00338d;
 }
 
-header.navbar .menu-item a, header.navbar .menu-item a:hover {
+.menu-light .menu-smart > li.active > a, .menu-light .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {
+  color: #ffffff;
+}
+
+header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .menu-item a, header.navbar .menu-item a:active {
   color: #ffffff;
   font-size: 13px;
   line-height: 1.08;
@@ -121,11 +133,46 @@ footer {
   background-color: #4d4f53;
 }
 
+footer .textwidget p {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+footer .wpb_content_element, footer .heading-text {
+  margin-top: 10px !important;
+}
+
 .menu-footer-menu-container {
   text-align: center;
 }
 
 .menu-footer-menu-container li a, .menu-footer-menu-container li a:hover {
+  color: #ffffff;
+  font-family: 'LeMondeLivrePro';
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+}
+
+footer ul.menu-smart {
+  text-align: right;
+}
+
+footer ul.menu-smart li {
+  border-right: 1px solid #ffffff;
+}
+
+footer .follow {
+  padding: 0px !important;
+}
+
+footer .footer-bottom-section {
+  padding-bottom: 111px;
+}
+
+footer .follow p {
   color: #ffffff;
   font-family: 'LeMondeLivrePro';
   font-size: 14px;
