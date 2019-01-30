@@ -38,19 +38,35 @@ h1, h2, h3, h4 {
   line-height: 0.96;
 }
 
+h2 {
+  line-height: 1.07;
+}
+
+h3 {
+  letter-spacing: normal;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
 h4 {
   letter-spacing: -0.3px;
   line-height: 1.36;
+  font-size: 30px !important;
 }
 
-h5 {
+h5, h6 {
   font-weight: bold;
   letter-spacing: 1.4px;
   line-height: 1.43;
+  text-transform: uppercase;
 }
 
-h5, p {
+h5, h6, p {
   font-family: 'Helvetica Neue';
+}
+
+a, a:visited {
+  color: #c79900;
 }
 
 .btn-container {
@@ -85,17 +101,17 @@ h5, p {
   border: 1px solid #979797 !important;
 }
 
-.btn.btn-flat-gold {
+.btn.btn-flat-gold, .loadmore-button .btn {
   background-color: #c79900 !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):hover {
   background-color: #D8B85C !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):active {
   background-color: #c79900 !important;
   color: white !important;
   border: 1px solid #979797 !important;
@@ -262,6 +278,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: -0.3px;
 }
 
+
 .card-round-gold-section .uncell .uncont {
   border: 1px solid #c79900;
   border-radius: 200px;
@@ -271,12 +288,29 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-top: 10px;
 }
 
+.card-round-gold-section.sepia-border .uncell .uncont {
+  border: 1px solid #867a24;
+  padding-top: 10px;
+}
+
+.card-round-gold-section.sepia-border .uncell .uncont {
+  border: 1px solid #867a24;
+  padding-top: 10px;
+}
+
 .card-round-gold-section .uncell .uncont .uncode_text_column {
   width: 200px;
   margin: 0 auto;
 }
 
 .card-round-gold-section .uncell .uncont p {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.homepage-card-full-row .card-round-gold-section .uncell .uncont p {
   margin: 0px;
   font-size: 16px;
   line-height: 1.5;
@@ -290,6 +324,12 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: -2.7px;
   font-weight: 500 !important; /* Book typeface */
   margin-bottom: 7px;
+}
+
+.card-round-gold-section .uncell .uncont h3 {
+  margin-top: 10px;
+  font-weight: 500 !important; /* Book typeface */
+  margin-bottom: 30px;
 }
 
 .billion {
@@ -391,4 +431,129 @@ li.menu-item-button::before, i.menu-item-button::after {
   width: 252px;
   background-color: #c79900 !important;
   color: white !important;
+}
+
+.page-intro-info-section h2 {
+  color: #867A24;
+}
+
+.sepia-border h2 {
+  color: #4d4f53;
+}
+
+.page-intro-info-section h4 {
+  color: #4d4f53;
+}
+
+.right-quote .uncol {
+  padding-right: 222px;
+}
+
+.blue-cards-section h3, .blue-cards-section p, .blue-cards-section h5 {
+  color: #ffffff;
+}
+
+.blue-cards-section h3 {
+  color: #ffffff;
+}
+
+.blue-cards-section p {
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 300;
+  font-family: Helvetica;
+}
+
+.blue-cards-section .uncode_text_column {
+  margin-bottom: 10px;
+}
+
+.blue-cards-section .icon-box-content, .blue-cards-section .icon-box {
+  padding-left: 0px;
+}
+
+.cat-comma {
+  color: #c79900;
+}
+
+.divider-wrapper {
+  margin-top: 17px !important;
+}
+
+.topics-section .icon-box-content h4 {
+  color: #cea62a;
+}
+
+.topics-section .row-internal {
+  margin-top: 18px !important;
+}
+
+.tmb-entry-title-uppercase.tmb .t-entry .t-entry-title {
+  text-transform: none;
+}
+
+.tmb-entry-title-uppercase.tmb .t-entry .t-entry-excerpt p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px;
+  line-height: 1.38;
+  color: #4d4f53;
+}
+
+.t-inside {
+  max-height: 570px !important;
+}
+
+.icon-box-content {
+  padding-left: 10px !important;
+}
+
+.white-phrase h2, .white-phrase h3, .white-phrase h4, .white-phrase h5, .white-phrase h6, .white-phrase p {
+  color: #ffffff;
+}
+
+.uncode-single-media {
+  margin-top: 10px !important;
+}
+
+.page-sub-intro h3, .page-sub-intro p {
+  color: #4d4f53;
+}
+
+.feature-text, .feature-text p {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.body-copy-1, .body-copy-1 p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.body-copy-2, .body-copy-2 p {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.disclaimer-text, .disclaimer-text p {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  margin-top: 5px;
 }
