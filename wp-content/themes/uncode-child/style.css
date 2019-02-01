@@ -149,10 +149,22 @@ footer {
   background-color: #4d4f53;
 }
 
-footer .textwidget p {
-  color: #ffffff;
+footer p {
+  color: #ffffff !important;
+  margin-top: 0px !important;
+}
+
+.footer-copyright p {
+  font-family: 'LeMondeLivrePro';
+  text-align: right;
   font-size: 12px;
-  margin-top: 0px;
+  line-height: 14px;
+}
+
+.footer-address-phone-info p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
 }
 
 footer .wpb_content_element, footer .heading-text {
@@ -367,7 +379,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-top: 5px;
 }
 
-.impact-section .icon-box-icon img {
+.icon-box-icon img {
   max-width: 37px !important;
 }
 
@@ -445,9 +457,8 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: #4d4f53;
 }
 
-.right-quote .uncol {
-  padding-top: 20px;
-  padding-right: 122px;
+.right-quote .uncode_text_column {
+  padding: 0px 0px 25px 128px;
 }
 
 .intro-right-text .uncol {
@@ -495,6 +506,11 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-left: 0px;
 }
 
+.blue-cards-section .icon-box-heading h5 {
+  text-transform: none;
+  font-size: 16px;
+}
+
 .cat-comma {
   color: #c79900;
 }
@@ -505,6 +521,15 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .topics-section .icon-box-content h4 {
   color: #cea62a;
+}
+
+.topics-section .icon-box-icon {
+  vertical-align: middle;
+  padding-top: 8px;
+}
+
+.topics-section .icon-box-icon img {
+  max-width: 20px !important;
 }
 
 .topics-section .row-internal {
@@ -618,4 +643,9 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-size: 16px !important;
   color: #4D4F53;
   line-height: 22px;
+  font-weight: normal;
+}
+
+.landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6, .landing-page-header p {
+  color: #867A24;
 }
