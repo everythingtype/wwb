@@ -51,7 +51,7 @@ h3 {
 h4 {
   letter-spacing: -0.3px;
   line-height: 1.36;
-  font-size: 30px !important;
+  font-size: 22px !important;
 }
 
 h5, h6 {
@@ -62,7 +62,7 @@ h5, h6 {
 }
 
 h5, h6, p {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 
 a, a:visited {
@@ -142,7 +142,7 @@ header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .men
   font-size: 13px;
   line-height: 1.08;
   letter-spacing: 0.7px;
-  font-family: 'HelveticaNeue';
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -446,10 +446,31 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .right-quote .uncol {
-  padding-right: 222px;
+  padding-top: 20px;
+  padding-right: 122px;
 }
 
-.blue-cards-section h3, .blue-cards-section p, .blue-cards-section h5 {
+.intro-right-text .uncol {
+  padding-top: 20px;
+  padding-right: 122px;
+}
+
+.intro-right-text h1, .intro-right-text h2, .intro-right-text h3, .intro-right-text h4, .intro-right-text p {
+  color: #4d4f53 !important;
+}
+
+.intro-right-text p {
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.blue-cards-section h3, .blue-cards-section h4, .blue-cards-section p, .blue-cards-section h5 {
   color: #ffffff;
 }
 
@@ -467,6 +488,7 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .blue-cards-section .uncode_text_column {
   margin-bottom: 10px;
+  min-height: 200px;
 }
 
 .blue-cards-section .icon-box-content, .blue-cards-section .icon-box {
@@ -556,4 +578,44 @@ li.menu-item-button::before, i.menu-item-button::after {
   line-height: 22px;
   letter-spacing: normal;
   margin-top: 5px;
+}
+
+.charcoal-text, .charcoal-text h1, .charcoal-text h2, .charcoal-text h3, .charcoal-text h4, .charcoal-text h5, .charcoal-text p{
+  color: #4D4F53;
+}
+
+.team-members-section .isotope-filters ul.menu-smart > li > span > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 60px;
+  color: #CEA62A;
+  font-family: 'LeMondeLivrePro';
+  padding: 0px 10px;
+}
+
+.team-members-section .isotope-filters ul.menu-smart > li > span > a.active {
+  color: #4D4F53;
+  border-bottom: 7px solid #4d4f53;
+}
+
+.team-members-section .isotope-filters ul.menu-smart > li > span {
+  padding-bottom: 0px;
+}
+
+.team-members-section .isotope-filters ul.menu-smart {
+  margin-bottom: 36px;
+  border-bottom: 3px solid #8996a0;
+  padding-top: 1px;
+}
+
+.team-members-section .t-entry-title {
+  text-transform: uppercase !important;
+}
+
+.team-members-section .t-entry-meta span {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px !important;
+  color: #4D4F53;
+  line-height: 22px;
 }
