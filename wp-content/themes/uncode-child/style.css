@@ -142,17 +142,25 @@ header.navbar, header.navbar .menu-container {
   background-color: #00338d;
 }
 
+header.navbar .menu-btn-container {
+  padding-top: 8px !important;
+  padding-bottom: 11px !important;
+  position: relative;
+  bottom: 5px;
+}
+
 .menu-light .menu-smart > li.active > a, .menu-light .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a, .menu-light .menu-smart > li.current-menu-ancestor > a {
   color: #ffffff;
 }
 
-header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .menu-item a, header.navbar .menu-item a:active {
+header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .menu-item a:active {
   color: #ffffff;
-  font-size: 13px;
-  line-height: 1.08;
-  letter-spacing: 0.7px;
+  font-size: 13px !important;
+  line-height: 1.08 !important;
+  letter-spacing: 0.7px !important;
   font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  font-weight: normal !important;
 }
 
 footer {
@@ -247,6 +255,24 @@ footer .follow .textwidget > div > div:first-child {
 
 footer .follow a img {
   margin: 0px !important;
+}
+
+article.post.type-post p, article.post.type-post li {
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4D4F53;
+  line-height: 24px;
+}
+
+article.post.type-post blockquote p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+article.post.type-post blockquote {
+  border-color: #867A24;
 }
 
 .menu-btn-container {
@@ -611,11 +637,11 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .feature-text, .feature-text p {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 22px !important;
+  font-weight: 300 !important;
   font-style: normal;
   font-stretch: normal;
-  line-height: 30px;
+  line-height: 30px !important;
   letter-spacing: normal;
 }
 
@@ -652,19 +678,22 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: #4D4F53;
 }
 
-.team-members-section .isotope-filters ul.menu-smart > li > span > a {
+.team-members-section .nav-tabs li > a > span {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 60px;
   color: #CEA62A;
   font-family: 'LeMondeLivrePro';
   padding: 0px 10px;
 }
 
-.team-members-section .isotope-filters ul.menu-smart > li > span > a.active {
-  color: #4D4F53;
-  border-bottom: 7px solid #4d4f53;
+.team-members-section .nav-tabs li.active > a > span {
+  color: #4D4F53 !important;
+}
+
+.team-members-section .nav-tabs li.active > a {
+  border-bottom: 7px solid #4d4f53 !important;
 }
 
 .team-members-section .isotope-filters ul.menu-smart > li > span {
@@ -691,4 +720,107 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6, .landing-page-header p {
   color: #867A24;
+}
+
+.author-post-container .author-profile .btn.btn-flat, .author-post-container .author-profile .btn.btn-flat:hover {
+  border: none !important;
+  padding: 0px !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+}
+
+.author-post-container .author-profile-content span {
+  color: #4d4f53;
+}
+
+.author-post-container .uncont {
+  display: inline-block;
+  width: 100%;
+}
+
+.author-post-container .uncont .heading-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.author-post-container .uncont .author-profile {
+  display: inline-block;
+  width: 80%;
+  margin: 0px !important;
+}
+
+.author-post-container .uncont .clear {
+  display: none;
+}
+
+.related-content-container .heading-text {
+  text-align: left;
+}
+
+.header-content-inner .post-date, .header-content-inner h1 {
+  color: #4D4F53;
+}
+
+.header-content-inner .post-date {
+  font-family: "LeMondeLivrePro";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.header-category-section {
+  background-color: #F6F6F6;
+}
+
+.header-category-section h4 {
+  color: #867A24;
+  padding-left: 36px;
+  margin: 0px;
+  padding: 24px 36px;
+}
+
+.citation-with-image {
+  max-width: 500px;
+  padding-top: 43px;
+  padding-bottom: 27px;
+}
+
+.citation-with-image h5 {
+  font-family: "LeMondeLivrePro";
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.citation-with-image h1,
+.citation-with-image h2,
+.citation-with-image h3,
+.citation-with-image h4,
+.citation-with-image h5,
+.citation-with-image h6,
+.citation-with-image p {
+  color: #ffffff;
+}
+
+.citation-without-image {
+  padding-top: 24px;
+  padding-bottom: 17px;
+}
+
+.citation-without-image h1,
+.citation-without-image h2,
+.citation-without-image h3,
+.citation-without-image h4,
+.citation-without-image h5,
+.citation-without-image h6,
+.citation-without-image p {
+  color: #867A24;
+}
+
+.citation-without-image h5 {
+  font-family: "LeMondeLivrePro";
+  line-height: 20px;
+  font-weight: normal;
+  color: #757575;
 }
