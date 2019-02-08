@@ -72,8 +72,25 @@ h5, h6, p {
   font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 
+hr, hr.separator-break {
+  margin: 5px 0px;
+  width: 100%;
+}
+
 a, a:visited {
   color: #c79900;
+}
+
+.gray-text,
+.gray-text h1,
+.gray-text h2,
+.gray-text h3,
+.gray-text h4,
+.gray-text h5,
+.gray-text h6,
+.gray-text p,
+.gray-text a {
+  color: #757575;
 }
 
 .btn-container {
@@ -161,6 +178,28 @@ header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .men
   font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: normal !important;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul {
+  background-color: #00338d;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul > li > a, .submenu-light .menu-horizontal .menu-smart ul > li.active > a {
+  color: #ffffff;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 2 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: none;
+  padding: 0px;
+  padding-bottom: 3px;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul a:hover {
+  color: #ffffff !important;
+  background-color: #00338d !important;
 }
 
 footer {
@@ -645,6 +684,28 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: normal;
 }
 
+.identifers-text, .identifers-text p {
+  font-family: 'LeMondeLivrePro';
+  color: #757575 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  font-stretch: normal;
+  line-height: 20px !important;
+  letter-spacing: normal;
+}
+
+.white-identifers-text, .white-identifers-text p {
+  font-family: 'LeMondeLivrePro';
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  font-stretch: normal;
+  line-height: 20px !important;
+  letter-spacing: normal;
+}
+
 .body-copy-1, .body-copy-1 p {
   font-family: 'LeMondeLivrePro';
   font-size: 16px;
@@ -678,7 +739,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: #4D4F53;
 }
 
-.team-members-section .nav-tabs li > a > span {
+.nav-tabs li > a > span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px !important;
@@ -686,14 +747,19 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: #CEA62A;
   font-family: 'LeMondeLivrePro';
   padding: 0px 10px;
+  letter-spacing: normal;
 }
 
-.team-members-section .nav-tabs li.active > a > span {
+.nav-tabs li.active > a > span {
   color: #4D4F53 !important;
 }
 
-.team-members-section .nav-tabs li.active > a {
-  border-bottom: 7px solid #4d4f53 !important;
+.nav-tabs li.active > a {
+  border-bottom: 5px solid #4d4f53 !important;
+}
+
+.nav-tabs li > a {
+  padding-bottom: 0px !important;
 }
 
 .team-members-section .isotope-filters ul.menu-smart > li > span {
@@ -708,6 +774,9 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .team-members-section .t-entry-title {
   text-transform: uppercase !important;
+  font-family: 'LeMondeLivrePro' !important;
+  font-size: 22px !important;
+  color: #4D4F53 !important;
 }
 
 .team-members-section .t-entry-meta span {
@@ -823,4 +892,107 @@ li.menu-item-button::before, i.menu-item-button::after {
   line-height: 20px;
   font-weight: normal;
   color: #757575;
+}
+
+.portfolio-companies-section hr {
+  width: 100%;
+  margin-top: 15px;
+  color: #867A24;
+}
+
+.portfolio-companies-section h5 {
+  color: #757575;
+}
+
+.portfolio-companies-section a, .portfolio-companies-section p {
+  color: #CEA62A;
+  font-family: "LeMondeLivrePro";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-date {
+  color: #4D4F53;
+  font-family: "LeMondeLivrePro";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-title a {
+  color: #4D4F53;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt, .isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p {
+  color: #4D4F53;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border: none !important;
+  padding: 0px !important;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .tmb {
+  border-bottom: 1px solid #4D4F53;
+  padding-bottom: 20px;
+}
+
+.isotope-footer .isotope-footer-inner {
+  max-width: 460px;
+}
+
+.isotope-footer .pagination .page-numbers {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  color: #c79900;
+}
+
+.isotope-footer .pagination .page-numbers.current {
+  background-color: #ffffff;
+  border: 1px solid #4D4F53;
+  color: #4D4F53;
+  line-height: 26px;
+}
+
+.isotope-footer .page-prev, .isotope-footer .page-next {
+  position: relative;
+  bottom: 7px;
+}
+
+.isotope-footer .fa {
+  color: #c79900;
+}
+
+.number-inside-circle {
+  margin: 0 auto;
+  border: 1px solid #4D4F53;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 25px !important;
+}
+
+.icon-box-left .icon-box-icon {
+  vertical-align: middle;
+}
+
+.icon-box-left .icon-box-heading {
+  margin: 0px !important;
+}
+
+.membership-requirements-section .icon-box {
+  margin-top: 10px !important;
 }
