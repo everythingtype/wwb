@@ -159,7 +159,7 @@ if (!class_exists('customHeader')) {
 							$get_post_type = get_post_type();
 							// echo json_encode(get_the_category());
 							// echo json_encode(get_the_date());
-							if ($get_post_type === 'post' && is_single()) {
+							if (($get_post_type === 'post' || $get_post_type === 'publications') && is_single()) {
 								$content_html .= '<div class="post-date">'. get_the_date() .'</div>';
 								// $content_html .= uncode_post_info();
 							}

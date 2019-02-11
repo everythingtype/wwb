@@ -200,12 +200,15 @@ while (have_posts()):
 		if ($header_html !== '') {
 			$post_category = get_the_category()[0];
 			$post_category_name = $post_category->name;
+			$get_post_type = get_post_type();
 			echo '<div id="page-header">';
-			echo '<div class="header-category-section">
-							<div class="limit-width">
-								<div><h4>'.$post_category_name.'</h4></div>
-							</div>
-						</div>';
+			if (($get_post_type === 'post' || $get_post_type === 'publications') && is_single()) {
+				echo '<div class="header-category-section">
+								<div class="limit-width">
+									<div><h4>'.$post_category_name.'</h4></div>
+								</div>
+							</div>';
+			}
 			echo uncode_remove_wpautop( $page_header->html );
 			echo '</div>';
 		}
