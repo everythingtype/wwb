@@ -38,19 +38,63 @@ h1, h2, h3, h4 {
   line-height: 0.96;
 }
 
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  line-height: 1.07;
+  font-size: 54px;
+}
+
+h3 {
+  letter-spacing: normal;
+  line-height: 1.2;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
 h4 {
   letter-spacing: -0.3px;
   line-height: 1.36;
+  font-size: 22px;
 }
 
-h5 {
+h5, h6 {
   font-weight: bold;
   letter-spacing: 1.4px;
   line-height: 1.43;
+  text-transform: uppercase;
+  font-size:14px;
 }
 
-h5, p {
-  font-family: 'Helvetica Neue';
+h5, h6, p {
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+hr, hr.separator-break {
+  margin: 5px 0px;
+  width: 100%;
+}
+
+body.textual-accent-color .post-content p:not(.entry-small):not(.panel-title):not(.t-entry-member-social) a:not(.btn) {
+  color: #c79900 !important;
+}
+
+a, a:visited {
+  color: #c79900;
+}
+
+.gray-text,
+.gray-text h1,
+.gray-text h2,
+.gray-text h3,
+.gray-text h4,
+.gray-text h5,
+.gray-text h6,
+.gray-text p,
+.gray-text a {
+  color: #757575;
 }
 
 .btn-container {
@@ -65,6 +109,8 @@ h5, p {
 .btn {
   padding: 5px 30px 7px !important;
   border-radius: 2px !important;
+  font-size: 14px !important;
+  font-family: 'LeMondeLivrePro';
 }
 
 .btn.btn-flat {
@@ -73,29 +119,29 @@ h5, p {
   border: 1px solid #c79900 !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat:hover {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:hover, .btn-accent.btn-flat:not(.btn-hover-nobg):hover {
   background-color: white !important;
   color: #D8B85C !important;
   border: 1px solid #D8B85C !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat:active {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:active, .btn-accent.btn-flat:not(.btn-hover-nobg):active {
   background-color: white !important;
   color: #c79900 !important;
   border: 1px solid #979797 !important;
 }
 
-.btn.btn-flat-gold {
+.btn.btn-flat-gold, .loadmore-button .btn {
   background-color: #c79900 !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):hover {
   background-color: #D8B85C !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):active {
   background-color: #c79900 !important;
   color: white !important;
   border: 1px solid #979797 !important;
@@ -117,26 +163,69 @@ header.navbar, header.navbar .menu-container {
   background-color: #00338d;
 }
 
-.menu-light .menu-smart > li.active > a, .menu-light .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a {
+header.navbar .menu-btn-container {
+  padding-top: 8px !important;
+  padding-bottom: 11px !important;
+  position: relative;
+  bottom: 5px;
+}
+
+.menu-light .menu-smart > li.active > a, .menu-light .menu-smart > li.current-menu-item:not(.menu-item-type-custom) > a, .menu-light .menu-smart > li.current-menu-ancestor > a {
   color: #ffffff;
 }
 
-header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .menu-item a, header.navbar .menu-item a:active {
+header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .menu-item a:active {
   color: #ffffff;
-  font-size: 13px;
-  line-height: 1.08;
-  letter-spacing: 0.7px;
-  font-family: 'HelveticaNeue';
+  font-size: 13px !important;
+  line-height: 1.08 !important;
+  letter-spacing: 0.7px !important;
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul {
+  background-color: #00338d;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul > li > a, .submenu-light .menu-horizontal .menu-smart ul > li.active > a {
+  color: #ffffff;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 2 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: none;
+  padding: 0px;
+  padding-bottom: 3px;
+}
+
+.submenu-light .menu-horizontal .menu-smart ul a:hover {
+  color: #ffffff !important;
+  background-color: #00338d !important;
 }
 
 footer {
   background-color: #4d4f53;
 }
 
-footer .textwidget p {
-  color: #ffffff;
+footer p {
+  color: #ffffff !important;
+  margin-top: 0px !important;
+}
+
+.footer-copyright p {
+  font-family: 'LeMondeLivrePro';
+  text-align: right;
   font-size: 12px;
-  margin-top: 0px;
+  line-height: 14px;
+}
+
+.footer-address-phone-info p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
 }
 
 footer .wpb_content_element, footer .heading-text {
@@ -172,13 +261,61 @@ footer .footer-bottom-section {
   padding-bottom: 111px;
 }
 
-footer .follow p {
+footer .follow .textwidget div {
   color: #ffffff;
   font-family: 'LeMondeLivrePro';
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 0.7px;
   font-weight: bold;
+}
+
+footer .follow div {
+  text-align: center;
+  display: inline-block;
+}
+
+footer .follow .uncell {
+  text-align: left;
+}
+
+footer .follow .textwidget div {
+  position: relative;
+  bottom: 1px;
+}
+
+footer .follow .textwidget > div > div {
+  padding-right: 10px;
+}
+
+footer .follow .textwidget a {
+  padding-right: 10px;
+}
+
+footer .follow .textwidget > div > div:first-child {
+  bottom: 9px;
+}
+
+footer .follow a img {
+  margin: 0px !important;
+}
+
+article.post.type-post p, article.post.type-post li {
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4D4F53;
+  line-height: 24px;
+}
+
+article.post.type-post blockquote p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+article.post.type-post blockquote {
+  border-color: #867A24;
 }
 
 .menu-btn-container {
@@ -213,7 +350,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   display: none;
 }
 
-.event-card {
+.event-card h2, .event-card h3, .event-card h4, .event-card h5, .event-card p{
   color: white !important;
 }
 
@@ -249,7 +386,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding: 35px 48px 53px 51px !important;
 }
 
-.homepage-card-info {
+.homepage-card-info h2, .homepage-card-info h5 {
   color: #c79900 !important;
 }
 
@@ -262,12 +399,26 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: -0.3px;
 }
 
+
 .card-round-gold-section .uncell .uncont {
   border: 1px solid #c79900;
   border-radius: 200px;
   width: 250px;
   height: 250px;
+  padding-top: 10px;
+}
+
+.card-round-gold-section .uncell .uncont h2, .card-round-gold-section .uncell .uncont p {
   color: #4d4f53 !important;
+}
+
+.card-round-gold-section.sepia-border .uncell .uncont {
+  border: 1px solid #867a24;
+  padding-top: 10px;
+}
+
+.card-round-gold-section.sepia-border .uncell .uncont {
+  border: 1px solid #867a24;
   padding-top: 10px;
 }
 
@@ -277,6 +428,13 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .card-round-gold-section .uncell .uncont p {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.homepage-card-full-row .card-round-gold-section .uncell .uncont p {
   margin: 0px;
   font-size: 16px;
   line-height: 1.5;
@@ -292,6 +450,12 @@ li.menu-item-button::before, i.menu-item-button::after {
   margin-bottom: 7px;
 }
 
+.card-round-gold-section .uncell .uncont h3 {
+  margin-top: 10px;
+  font-weight: 500 !important; /* Book typeface */
+  margin-bottom: 30px;
+}
+
 .billion {
   line-height: 1.09;
   font-size: 22px;
@@ -300,10 +464,10 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .card-cell-text {
-  min-height: 444px;
+  min-height: 470px;
 }
 
-.impact-section {
+.impact-section h2, .impact-section h5 {
   color: #757575;
 }
 
@@ -327,7 +491,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-top: 5px;
 }
 
-.impact-section .icon-box-icon img {
+.icon-box-icon img {
   max-width: 37px !important;
 }
 
@@ -337,14 +501,14 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .isotope-container .tmb .t-inside .t-entry-date {
   font-family: 'LeMondeLivrePro';
-  color: #4D4F53;
+  color: #4D4F53 !important;
   font-size: 12px;
   line-height: 16px;
 }
 
 .isotope-container .tmb .t-inside .t-entry-category a {
   font-family: 'LeMondeLivrePro';
-  color: #CEA62A;
+  color: #CEA62A !important;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -391,4 +555,515 @@ li.menu-item-button::before, i.menu-item-button::after {
   width: 252px;
   background-color: #c79900 !important;
   color: white !important;
+}
+
+.page-intro-info-section h2 {
+  color: #867A24;
+}
+
+.sepia-border h2 {
+  color: #4d4f53;
+}
+
+.page-intro-info-section h4 {
+  color: #4d4f53;
+}
+
+.right-quote .uncode_text_column {
+  padding: 0px 0px 25px 128px;
+}
+
+.intro-right-text .uncol {
+  padding-top: 20px;
+  padding-right: 122px;
+}
+
+.intro-right-text h1, .intro-right-text h2, .intro-right-text h3, .intro-right-text h4, .intro-right-text p {
+  color: #4d4f53 !important;
+}
+
+.intro-right-text p {
+  font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.blue-cards-section h3, .blue-cards-section h4, .blue-cards-section p, .blue-cards-section h5 {
+  color: #ffffff;
+}
+
+.blue-cards-section h3 {
+  color: #ffffff;
+}
+
+.blue-cards-section p {
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 300;
+  font-family: Helvetica;
+}
+
+.blue-cards-section .uncode_text_column {
+  margin-bottom: 10px;
+  min-height: 200px;
+}
+
+.blue-cards-section .icon-box-content, .blue-cards-section .icon-box {
+  padding-left: 0px;
+}
+
+.blue-cards-section .icon-box-heading h5 {
+  text-transform: none;
+  font-size: 16px;
+}
+
+.cat-comma {
+  color: #c79900;
+}
+
+.divider-wrapper {
+  margin-top: 17px !important;
+}
+
+.topics-section .icon-box-content h4 {
+  color: #cea62a;
+}
+
+.topics-section .icon-box-icon {
+  vertical-align: middle;
+  padding-top: 8px;
+}
+
+.topics-section .icon-box-icon img {
+  max-width: 20px !important;
+}
+
+.topics-section .row-internal {
+  margin-top: 18px !important;
+}
+
+.tmb-entry-title-uppercase.tmb .t-entry .t-entry-title {
+  text-transform: none;
+}
+
+.tmb-entry-title-uppercase.tmb .t-entry .t-entry-excerpt p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px;
+  line-height: 1.38;
+  color: #4d4f53;
+}
+
+.t-inside {
+  max-height: 570px !important;
+}
+
+.icon-box-content {
+  padding-left: 10px !important;
+}
+
+.white-phrase h2, .white-phrase h3, .white-phrase h4, .white-phrase h5, .white-phrase h6, .white-phrase p {
+  color: #ffffff;
+}
+
+.uncode-single-media {
+  margin-top: 10px !important;
+}
+
+.page-sub-intro h3, .page-sub-intro p {
+  color: #4d4f53;
+}
+
+.feature-text, .feature-text p {
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px !important;
+  letter-spacing: normal;
+}
+
+.identifers-text, .identifers-text p {
+  font-family: 'LeMondeLivrePro';
+  color: #757575 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  font-stretch: normal;
+  line-height: 20px !important;
+  letter-spacing: normal;
+}
+
+.white-identifers-text, .white-identifers-text p {
+  font-family: 'LeMondeLivrePro';
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  font-stretch: normal;
+  line-height: 20px !important;
+  letter-spacing: normal;
+}
+
+.body-copy-1, .body-copy-1 p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.body-copy-2, .body-copy-2 p {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.disclaimer-text, .disclaimer-text p {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  margin-top: 5px;
+}
+
+.charcoal-text, .charcoal-text h1, .charcoal-text h2, .charcoal-text h3, .charcoal-text h4, .charcoal-text h5, .charcoal-text p{
+  color: #4D4F53;
+}
+
+.nav-tabs li > a > span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 60px;
+  color: #CEA62A;
+  font-family: 'LeMondeLivrePro';
+  padding: 0px 10px;
+  letter-spacing: normal;
+}
+
+.nav-tabs li.active > a > span {
+  color: #4D4F53 !important;
+}
+
+.nav-tabs li.active > a {
+  border-bottom: 5px solid #4d4f53 !important;
+}
+
+.nav-tabs li > a {
+  padding-bottom: 0px !important;
+}
+
+.team-members-section .isotope-filters ul.menu-smart > li > span {
+  padding-bottom: 0px;
+}
+
+.team-members-section .isotope-filters ul.menu-smart {
+  margin-bottom: 36px;
+  border-bottom: 3px solid #8996a0;
+  padding-top: 1px;
+}
+
+.team-members-section .t-entry-title {
+  text-transform: uppercase !important;
+  font-family: 'LeMondeLivrePro' !important;
+  font-size: 22px !important;
+  color: #4D4F53 !important;
+}
+
+.team-members-section .t-entry-meta span {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px !important;
+  color: #4D4F53 !important;
+  line-height: 22px;
+  font-weight: normal !important;
+}
+
+.landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6, .landing-page-header p {
+  color: #867A24;
+}
+
+.author-post-container .author-profile .btn.btn-flat, .author-post-container .author-profile .btn.btn-flat:hover {
+  border: none !important;
+  padding: 0px !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+}
+
+.author-post-container .author-profile-content span {
+  color: #4d4f53;
+}
+
+.author-post-container .uncont {
+  display: inline-block;
+  width: 100%;
+}
+
+.author-post-container .uncont .heading-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.author-post-container .uncont .author-profile {
+  display: inline-block;
+  width: 80%;
+  margin: 0px !important;
+}
+
+.author-post-container .uncont .clear {
+  display: none;
+}
+
+.related-content-container .heading-text {
+  text-align: left;
+}
+
+.header-content-inner .post-date, .header-content-inner h1 {
+  color: #4D4F53;
+}
+
+.header-content-inner .post-date {
+  font-family: "LeMondeLivrePro";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.header-category-section {
+  background-color: #F6F6F6;
+}
+
+.header-category-section h4 {
+  color: #867A24;
+  padding-left: 36px;
+  margin: 0px;
+  padding: 24px 36px;
+}
+
+.citation-with-image {
+  max-width: 500px;
+  padding-top: 43px;
+  padding-bottom: 27px;
+}
+
+.citation-with-image h5 {
+  font-family: "LeMondeLivrePro";
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.citation-with-image h1,
+.citation-with-image h2,
+.citation-with-image h3,
+.citation-with-image h4,
+.citation-with-image h5,
+.citation-with-image h6,
+.citation-with-image p {
+  color: #ffffff;
+}
+
+.citation-without-image {
+  padding-top: 24px;
+  padding-bottom: 17px;
+}
+
+.citation-without-image h1,
+.citation-without-image h2,
+.citation-without-image h3,
+.citation-without-image h4,
+.citation-without-image h5,
+.citation-without-image h6,
+.citation-without-image p {
+  color: #867A24;
+}
+
+.citation-without-image h5 {
+  font-family: "LeMondeLivrePro";
+  line-height: 20px;
+  font-weight: normal;
+  color: #757575;
+}
+
+.portfolio-companies-section hr {
+  width: 100%;
+  margin-top: 15px;
+  color: #867A24;
+}
+
+.portfolio-companies-section h5 {
+  color: #757575;
+}
+
+.portfolio-companies-section a, .portfolio-companies-section p {
+  color: #CEA62A;
+  font-family: "LeMondeLivrePro";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-date {
+  color: #4D4F53;
+  font-family: "LeMondeLivrePro";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-title a {
+  color: #4D4F53;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt, .isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p {
+  color: #4D4F53;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border: none !important;
+  padding: 0px !important;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .tmb {
+  border-bottom: 1px solid #4D4F53;
+  padding-bottom: 20px;
+}
+
+.isotope-footer .isotope-footer-inner {
+  max-width: 460px;
+}
+
+.isotope-footer .pagination .page-numbers {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  color: #c79900;
+}
+
+.isotope-footer .pagination .page-numbers.current {
+  background-color: #ffffff;
+  border: 1px solid #4D4F53;
+  color: #4D4F53;
+  line-height: 26px;
+}
+
+.isotope-footer .page-prev, .isotope-footer .page-next {
+  position: relative;
+  bottom: 7px;
+}
+
+.isotope-footer .fa {
+  color: #c79900;
+}
+
+.number-inside-circle {
+  margin: 0 auto;
+  border: 1px solid #4D4F53;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 25px !important;
+}
+
+.icon-box-left .icon-box-icon {
+  vertical-align: middle;
+}
+
+.icon-box-left .icon-box-heading {
+  margin: 0px !important;
+}
+
+.membership-requirements-section .icon-box {
+  margin-top: 10px !important;
+}
+
+.partners-location-section p,
+.partners-location-section p > a,
+.partners-location-section p > strong,
+.partners-location-section em {
+  color: #757575 !important;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-date {
+  color: #4D4F53 !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category a {
+  color: #CEA62A !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category .fa {
+  display: none;
+}
+
+.owl-carousel .tmb .t-entry .t-entry-title {
+  color: #4D4F53 !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 22px;
+  letter-spacing: -0.55px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.owl-carousel .tmb .t-entry .t-entry-readmore a {
+  color: #CEA62A !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 16px !important;
+  font-weight: bold !important;
+  line-height: 22px !important;
+  padding: 0px !important;
+  border: none !important;
+  text-transform: uppercase;
+}
+
+.post-footer, .row-navigation {
+  display: none !important;
+}
+
+.archive .row-container.row-navigation.row-navigation-light {
+  display: none !important;
+}
+
+.publication-cover .tmb .t-entry-visual img {
+  width: unset;
+  float: right;
+}
+
+.header-wrapper .header-content-inner {
+  padding-bottom: 0px !important;
 }
