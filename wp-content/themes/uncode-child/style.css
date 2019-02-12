@@ -527,6 +527,38 @@ li.menu-item-button::before, i.menu-item-button::after {
   line-height: 30px;
 }
 
+.isotope-container .tmb .t-inside .t-entry-readmore a {
+  color: #CEA62A !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 16px !important;
+  font-weight: bold !important;
+  line-height: 22px !important;
+  padding: 0px !important;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
+.isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .t-entry-category.t-entry-date,
+.isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .t-entry-category.t-entry-tax,
+.isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .small-spacer {
+  display: none;
+}
+
+.isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .t-entry-category.t-entry-tag a,
+.isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .t-entry-category.t-entry-tag .cat-comma {
+  color: #CEA62A !important;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.isotope-container .tmb .t-inside .t-entry-visual {
+  height: 243px !important;
+}
+
 .hero-phrase h2 {
   color: #ffffff;
   max-width: 971px;
@@ -618,6 +650,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-left: 0px;
 }
 
+.blue-cards-section .icon-box-content {
+  padding-top: 4px;
+}
+
 .blue-cards-section .icon-box-heading h5 {
   text-transform: none;
   font-size: 16px;
@@ -667,8 +703,8 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-left: 10px !important;
 }
 
-.white-phrase h2, .white-phrase h3, .white-phrase h4, .white-phrase h5, .white-phrase h6, .white-phrase p {
-  color: #ffffff;
+.icon-box-content br {
+  display: none;
 }
 
 .uncode-single-media {
@@ -747,6 +783,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   line-height: 22px;
   letter-spacing: normal;
   margin-top: 5px;
+}
+
+.white-phrase h2, .white-phrase h3, .white-phrase h4, .white-phrase h5, .white-phrase h6, .white-phrase p {
+  color: #ffffff;
 }
 
 .charcoal-text, .charcoal-text h1, .charcoal-text h2, .charcoal-text h3, .charcoal-text h4, .charcoal-text h5, .charcoal-text p{
@@ -1077,4 +1117,8 @@ li.menu-item-button::before, i.menu-item-button::after {
 .single-events .main-container .header-wrapper .row-container .row-parent {
   /* This only applies to Events post types */
   padding-bottom: 20px;
+}
+
+.organization-by-numbers-section .row-parent .column_child.single-internal-gutter .uncont > *:not(:first-child) {
+  margin-top: 5px !important;
 }
