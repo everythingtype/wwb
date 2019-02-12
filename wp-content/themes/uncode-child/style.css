@@ -680,6 +680,7 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .feature-text, .feature-text p {
+  color: #757575;
   font-size: 22px !important;
   font-weight: 300 !important;
   font-style: normal;
@@ -720,13 +721,22 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: normal;
 }
 
-.body-copy-2, .body-copy-2 p {
+.body-copy-2, .body-copy-2 p, 
+.single-events .icon-box-content, .single-events .icon-box-content,
+.single-events .icon-box-content, .single-events .icon-box-content p {
+  color: #4d4f53;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 22px;
-  letter-spacing: normal;
+  letter-spacing: 0.5px;
+}
+
+.body-copy-2 strong, .body-copy-2 p strong,
+.single-events .icon-box-content, .single-events .icon-box-content strong,
+.single-events .icon-box-content, .single-events .icon-box-content p strong {
+  color: #4d4f53;
 }
 
 .disclaimer-text, .disclaimer-text p {
@@ -989,10 +999,6 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-size: 25px !important;
 }
 
-.icon-box-left .icon-box-icon {
-  vertical-align: middle;
-}
-
 .icon-box-left .icon-box-heading {
   margin: 0px !important;
 }
@@ -1066,4 +1072,9 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .header-wrapper .header-content-inner {
   padding-bottom: 0px !important;
+}
+
+.single-events .main-container .header-wrapper .row-container .row-parent {
+  /* This only applies to Events post types */
+  padding-bottom: 20px;
 }
