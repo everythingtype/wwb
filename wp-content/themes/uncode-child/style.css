@@ -841,6 +841,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-weight: normal !important;
 }
 
+.team-members-section .t-background-cover {
+  background-position: top center !important;
+}
+
 .landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6, .landing-page-header p {
   color: #867A24;
 }
