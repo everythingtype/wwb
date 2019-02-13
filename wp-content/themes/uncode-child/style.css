@@ -347,6 +347,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: white !important;
 }
 
+.hero-header h2 {
+  text-shadow: 0px 2px 11px rgba(0,0,0,0.8);
+}
+
 .hero-subheader p {
   color: white !important;
 }
@@ -393,10 +397,6 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .homepage-card-info h2, .homepage-card-info h5 {
   color: #c79900 !important;
-}
-
-.homepage-card-info h2 {
-  padding-right: 85px;
 }
 
 .homepage-card-info h4 {
@@ -500,6 +500,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   max-width: 37px !important;
 }
 
+.icon-box-icon.two-x-width img {
+  max-width: 74px !important;
+}
+
 .icon-box-icon.no-max-width img {
   max-width: unset !important;
 }
@@ -566,6 +570,11 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .isotope-container .tmb .t-inside .t-entry-visual, .owl-carousel-container .tmb .t-inside .t-entry-visual {
   height: 243px !important;
+}
+
+.owl-carousel-container .owl-dots-outside .owl-dots .owl-dot {
+  height: 30px;
+  padding-top: 3px;
 }
 
 .owl-carousel-container .owl-dots-outside .owl-dots .owl-dot span {
@@ -1040,7 +1049,8 @@ animation: none !important;
   line-height: 36px;
 }
 
-.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt, .isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p {
+.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt, .isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p,
+.owl-carousel .tmb .t-entry .t-entry-excerpt p {
   color: #4D4F53;
   font-size: 16px;
   font-weight: 300;
@@ -1123,6 +1133,14 @@ animation: none !important;
   font-weight: normal;
 }
 
+.owl-carousel .tmb .t-entry .t-entry-type {
+  color: #4D4F53 !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
 .owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category a {
   color: #CEA62A !important;
   font-family: "LeMondeLivrePro";
@@ -1165,8 +1183,9 @@ animation: none !important;
 }
 
 .publication-cover .tmb .t-entry-visual img {
-  width: unset;
+  width: 337px;
   float: right;
+  border: 1px solid #9B9B9B;
 }
 
 .header-wrapper .header-content-inner {
@@ -1180,4 +1199,10 @@ animation: none !important;
 
 .organization-by-numbers-section .row-parent .column_child.single-internal-gutter .uncont > *:not(:first-child) {
   margin-top: 5px !important;
+}
+
+.author-picture-container {
+  height: 701px;
+  width: 428px;
+  float: right;
 }
