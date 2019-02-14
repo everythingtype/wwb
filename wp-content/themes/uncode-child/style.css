@@ -619,6 +619,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-weight: normal;
 }
 
+.past-events .isotope-container {
+  padding-right: 36px !important;
+}
+
 .past-events .isotope-container .tmb {
   padding-bottom: 45px !important;
 }
@@ -763,6 +767,19 @@ animation: none !important;
 .blue-cards-section .uncode_text_column {
   margin-bottom: 10px;
   min-height: 200px;
+}
+
+.blue-cards-section .uncont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .blue-cards-section .icon-box-content, .blue-cards-section .icon-box {
@@ -1125,7 +1142,7 @@ p strong,
 }
 
 .isotope-layout.style-masonry.isotope-pagination .tmb {
-  border-bottom: 1px solid #4D4F53;
+  border-bottom: 1px solid #867a24;
   padding-bottom: 20px;
 }
 
