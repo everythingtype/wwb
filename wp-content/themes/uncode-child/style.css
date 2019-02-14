@@ -193,6 +193,7 @@ header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .men
   background-color: #00338d;
   margin-top: 0px !important;
   padding-top: 0px !important;
+  padding-bottom: 35px !important;
 }
 
 .submenu-light .menu-horizontal .menu-smart ul > li > a, .submenu-light .menu-horizontal .menu-smart ul > li.active > a {
@@ -572,6 +573,22 @@ li.menu-item-button::before, i.menu-item-button::after {
   height: 243px !important;
 }
 
+.isotope-container .tmb .t-entry .t-entry-type {
+  color: #4D4F53 !important;
+  font-family: "LeMondeLivrePro";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.past-events .isotope-container .tmb {
+  padding-bottom: 45px !important;
+}
+
+.past-events .isotope-container .tmb .t-inside {
+  margin-top: 15px !important;
+}
+
 .owl-carousel-container .owl-dots-outside .owl-dots .owl-dot {
   height: 30px;
   padding-top: 3px;
@@ -821,6 +838,7 @@ animation: none !important;
   letter-spacing: normal;
 }
 
+p,
 .body-copy-2, .body-copy-2 p, 
 .single-events .icon-box-content, .single-events .icon-box-content,
 .single-events .icon-box-content, .single-events .icon-box-content p {
@@ -833,6 +851,7 @@ animation: none !important;
   letter-spacing: 0.5px;
 }
 
+p strong,
 .body-copy-2 strong, .body-copy-2 p strong,
 .single-events .icon-box-content, .single-events .icon-box-content strong,
 .single-events .icon-box-content, .single-events .icon-box-content p strong {
