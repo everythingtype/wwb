@@ -156,6 +156,12 @@ a, a:visited {
   max-width: 928px !important;
 }
 
+@media (min-width: 1452px) {
+  .row-content-container:not(.homepage-hero) .row-background .background-inner {
+    background-size: contain !important;
+  }
+}
+
 .menu-sticky {
   background-color: #00338d;
 }
