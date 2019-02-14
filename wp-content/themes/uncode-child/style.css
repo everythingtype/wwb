@@ -164,6 +164,38 @@ header .logo-container, header .logo-container.shrinked {
   padding: 10px 0px;
 }
 
+@media (max-width: 959px) {
+  .menu-container .logo-container {
+    padding: 9px 36px 10px 36px !important;
+  }
+
+  .menu-light .row-brand, .menu-light .row-menu .row-menu-inner {
+    border-bottom: none;
+  }
+
+  .submenu-light .menu-smart, .submenu-light .menu-sidebar-inner, .submenu-light .main-menu-container {
+    background-color: #00338d;
+  }
+
+  .mobile-menu-button .lines, .mobile-menu-button .lines:before, .mobile-menu-button .lines:after {
+    background: #ffffff;
+    width: 44px;
+    height: 5px;
+  }
+  
+  .mobile-menu-button .lines:before {
+    top: 14px;
+  }
+  
+  .mobile-menu-button .lines:after {
+    top: -14px;
+  }
+
+  .lines-button.x2.close .lines:before, .lines-button.x2.close .lines:after {
+    width: 44px;
+  }
+}
+
 header.navbar, header.navbar .menu-container {
   background-color: #00338d;
 }
