@@ -85,6 +85,10 @@ a, a:visited {
   color: #c79900;
 }
 
+body.textual-accent-color .post-content p:not(.entry-small):not(.panel-title):not(.t-entry-member-social) a:not(.btn-text-skin):hover:not(.btn) {
+color: #D8B85C !important;
+}
+
 .gray-text,
 .gray-text h1,
 .gray-text h2,
@@ -156,7 +160,8 @@ a, a:visited {
   max-width: 928px !important;
 }
 
-@media (min-width: 1452px) {
+
+@media (min-width: 1100px) {
   .row-content-container:not(.homepage-hero) .row-background .background-inner {
     background-size: contain !important;
   }
@@ -289,12 +294,12 @@ footer .wpb_content_element, footer .heading-text {
   font-weight: bold;
 }
 
-footer ul.menu-smart {
-  text-align: right;
-}
-
 footer ul.menu-smart li {
   border-right: 1px solid #ffffff;
+}
+
+footer ul.menu-smart li:last-child {
+  border-right: none;
 }
 
 footer .follow {
@@ -342,6 +347,11 @@ footer .follow .textwidget > div > div:first-child {
 
 footer .follow a img {
   margin: 0px !important;
+}
+
+footer .footer-last {
+  background-color: #00338d;
+  padding-bottom: 100px;
 }
 
 article.post.type-post p, article.post.type-post li {
@@ -443,6 +453,12 @@ li.menu-item-button::before, i.menu-item-button::after {
   margin-bottom: 20px;
 }
 
+@media (min-width: 960px) {
+  .homepage-card-full-row .row .row-inner {
+    margin-left: 0px !important;
+  }
+}
+
 .homepage-card-full-row .row .row-inner, .homepage-card-cells .uncol .uncell {
   background-color: #ffffff;
   border-top: 10px solid #c79900 !important;
@@ -469,6 +485,10 @@ li.menu-item-button::before, i.menu-item-button::after {
 .homepage-card-info h4 {
   color: #4d4f53 !important;
   letter-spacing: -0.3px;
+}
+
+.homepage-card-info .uncode_text_column {
+  margin-bottom: 17px;
 }
 
 
@@ -525,7 +545,7 @@ li.menu-item-button::before, i.menu-item-button::after {
 .card-round-gold-section .uncell .uncont h3 {
   margin-top: 10px;
   font-weight: 500 !important; /* Book typeface */
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .billion {
@@ -553,6 +573,13 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .impact-section .icon-box-heading h4 {
   color: #4D4F53;
+  padding-right: 80px;
+}
+
+@media (max-width: 375px) {
+  .impact-section .icon-box-heading h4 {
+    padding-right: 40px;
+  }
 }
 
 .impact-section .icon-box-icon {
@@ -603,7 +630,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   line-height: 30px;
 }
 
-.isotope-container .tmb .t-inside .t-entry-readmore a {
+.isotope-container .tmb .t-inside .t-entry-readmore a, .isotope-container .tmb .t-inside .t-entry-readmore a.btn.btn-flat {
   color: #CEA62A !important;
   font-family: "LeMondeLivrePro";
   font-size: 16px !important;
@@ -613,6 +640,11 @@ li.menu-item-button::before, i.menu-item-button::after {
   border: none !important;
   text-transform: uppercase;
   letter-spacing: normal;
+}
+
+.isotope-container .tmb .t-inside .t-entry-readmore a:hover,
+.isotope-container .tmb .t-inside .t-entry-readmore a.btn.btn-flat:hover {
+  color: #D8B85C !important;
 }
 
 .isotope-container .tmb .t-inside > .t-entry-text > .t-entry-text-tc .t-entry-meta:last-child > .t-entry-category.t-entry-date,
@@ -629,6 +661,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-weight: normal;
   font-style: normal;
   letter-spacing: normal;
+  text-transform: none;
 }
 
 .isotope-container .tmb .t-inside .t-entry-visual, .owl-carousel-container .tmb .t-inside .t-entry-visual {
@@ -923,10 +956,10 @@ p,
 .single-events .icon-box-content, .single-events .icon-box-content p {
   color: #4d4f53;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 22px;
+  line-height: 26px;
   letter-spacing: 0.5px;
 }
 
@@ -1163,6 +1196,10 @@ p strong,
   text-transform: uppercase;
   line-height: 22px;
   letter-spacing: normal;
+}
+
+.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a:hover {
+  border: none !important;
 }
 
 .isotope-layout.style-masonry.isotope-pagination .tmb {
