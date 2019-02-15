@@ -390,6 +390,17 @@ li.menu-item-button::before, i.menu-item-button::after {
   text-shadow: 0px 2px 11px rgba(0,0,0,0.8);
 }
 
+@media (max-width: 959px) {
+  .homepage-hero.row-container .single-h-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-subheader p span {
+    font-size: 20px !important;
+  }
+}
+
 .hero-subheader p {
   color: white !important;
 }
@@ -416,6 +427,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   letter-spacing: -2px;
 }
 
+.event-card .rsvp-info h5 {
+  margin-top: 0px;
+}
+
 .event-card .rsvp-info .uncell {
   padding-top: 50px;
 }
@@ -434,6 +449,19 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding: 35px 48px 53px 51px !important;
 }
 
+@media (max-width: 959px) {
+  .homepage-card-full-row .row .row-inner, .homepage-card-cells .uncol .uncell {
+    padding: 35px 26px 53px 26px !important;
+  } 
+}
+
+.homepage-card.pos-left > .uncol > .uncoltable > .uncell > .uncont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .homepage-card-info h2, .homepage-card-info h5 {
   color: #c79900 !important;
 }
@@ -446,9 +474,9 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .card-round-gold-section .uncell .uncont {
   border: 1px solid #c79900;
-  border-radius: 200px;
-  width: 250px;
-  height: 250px;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px !important;
   padding-top: 10px;
 }
 
@@ -505,10 +533,6 @@ li.menu-item-button::before, i.menu-item-button::after {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: normal;
-}
-
-.card-cell-text {
-  min-height: 470px;
 }
 
 .impact-section h2, .impact-section h5 {
