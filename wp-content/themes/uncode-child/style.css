@@ -839,6 +839,10 @@ animation: none !important;
   justify-content: flex-end;
 }
 
+.blue-cards-section a {
+  color: #ffffff;
+}
+
 .blue-cards-section .icon-box-content, .blue-cards-section .icon-box {
   padding-left: 0px;
 }
