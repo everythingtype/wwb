@@ -258,6 +258,7 @@ header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .men
 .submenu-light .menu-horizontal .menu-smart ul a:hover {
   color: #ffffff !important;
   background-color: #00338d !important;
+  font-weight: 500 !important;
 }
 
 footer {
@@ -1511,7 +1512,7 @@ a.medium-weight-links, .medium-weight-links a {
   background-image: url('/wp-content/uploads/2018/12/wwb-logo-2x.png');
   width: 52px !important;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 @media (max-width: 959px) {
