@@ -81,7 +81,12 @@ body.textual-accent-color .post-content p:not(.entry-small):not(.panel-title):no
   color: #c79900 !important;
 }
 
-a, a:visited {
+a, a:visited,
+.style-light .link, .style-light.style-override .link,
+.style-dark .style-light .link, .style-light a, .style-light.style-override a,
+.style-dark .style-light a, .style-light input[type=checkbox]:checked:before,
+.style-light.style-override input[type=checkbox]:checked:before,
+.style-dark .style-light input[type=checkbox]:checked:before {
   color: #c79900;
 }
 
@@ -992,6 +997,10 @@ p strong,
   color: #4D4F53;
 }
 
+a.medium-weight-links, .medium-weight-links a {
+  font-weight: 500;
+}
+
 .nav-tabs li > a > span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1336,6 +1345,15 @@ p strong,
   padding-bottom: 20px;
 }
 
+.single-events .main-container .header-wrapper .row-container .row-parent {
+  /* This only applies to Events post types */
+  padding-bottom: 20px;
+}
+
+.single-events .tagcloud {
+  display: none;
+}
+
 .organization-by-numbers-section .row-parent .column_child.single-internal-gutter .uncont > *:not(:first-child) {
   margin-top: 5px !important;
 }
@@ -1344,4 +1362,52 @@ p strong,
   height: 701px;
   width: 428px;
   float: right;
+}
+
+.jobs-listing-section .tab-content p:not(.entry-small):not(.panel-title):not(.t-entry-member-social).t-entry-meta span.t-entry-category.t-entry-tax a:not(.btn) {
+  color: #4d4f53 !important;
+  font-weight: normal;
+}
+
+.jobs-listing-section .tab-content p:not(.entry-small):not(.panel-title):not(.t-entry-member-social).t-entry-meta span.t-entry-category.t-entry-tax a:not(.btn):hover {
+  color: #D8B85C !important;
+  font-weight: normal;
+}
+
+.single-jobs article ul,
+.page-id-74404 /* Leadership and Diversity for Innovation Program page */ article ul {
+  list-style-type: none !important;
+}
+
+.single-jobs article ul li:before,
+.page-id-74404 /* Leadership and Diversity for Innovation Program page */ article ul li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1em;
+}
+
+.single-jobs .tagcloud {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .page-id-74404 /* Leadership and Diversity for Innovation Program page */ .post-body .row, .single-jobs .header-wrapper .row,
+  .single-jobs .post-body .row, .single-jobs .header-wrapper .row {
+    padding-right: 21%;
+  }
+
+  .isotope-system.isotope-general-light .isotope-container[data-layout="cellsByRow"] {
+    /*
+    To fix the module width calculations on some resolutions
+    when using a on three column grid system
+    */
+    width: calc(100% + 0.4px) !important;
+  }
+
+  .isotope-system.isotope-general-light .isotope-container[data-layout="cellsByRow"] .tmb {
+    /*
+    To fix the items height calculations on a low end laptop resolution
+    when using a on three column grid system*/
+    min-height: 520px !important;
+  }
 }
