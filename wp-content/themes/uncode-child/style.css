@@ -1502,3 +1502,36 @@ a.medium-weight-links, .medium-weight-links a {
 .pum-close.popmake-close:not(.btn) {
   display: none !important;
 }
+
+.logo-container.shrinked .logo-image > img {
+  display: none !important;
+}
+
+.logo-container.shrinked .logo-image {
+  background-image: url('/wp-content/uploads/2018/12/wwb-logo-2x.png');
+  width: 52px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 959px) {
+  .menu-container .logo-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .mobile-menu-button {
+    padding-right: 10px !important;
+  }
+
+  .logo-container .logo-image > img {
+    display: none !important;
+  }
+  
+  .logo-container .logo-image {
+    background-image: url('/wp-content/uploads/2018/12/mobile-header-logo.png');
+    width: 270px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
