@@ -133,13 +133,13 @@ color: #D8B85C !important;
   padding-right: 57px !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat:hover, .btn-accent.btn-flat:not(.btn-hover-nobg):hover {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:hover, .btn-accent.btn-flat:not(.btn-hover-nobg):hover, .btn.btn-flat:hover {
   background-color: white !important;
   color: #D8B85C !important;
   border: 1px solid #D8B85C !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat:active, .btn-accent.btn-flat:not(.btn-hover-nobg):active {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat:active, .btn-accent.btn-flat:not(.btn-hover-nobg):active, .btn.btn-flat:active {
   background-color: white !important;
   color: #c79900 !important;
   border: 1px solid #979797 !important;
@@ -150,12 +150,12 @@ color: #D8B85C !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):hover {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):hover, .btn.btn-flat-gold:hover {
   background-color: #D8B85C !important;
   color: white !important;
 }
 
-.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):active {
+.style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:active, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):active, .btn.btn-flat-gold:active {
   background-color: #c79900 !important;
   color: white !important;
   border: 1px solid #979797 !important;
@@ -955,7 +955,7 @@ animation: none !important;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 22px;
+  line-height: 26px;
   letter-spacing: normal;
 }
 
@@ -1193,7 +1193,10 @@ a.medium-weight-links, .medium-weight-links a {
   line-height: 36px;
 }
 
-.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt, .isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p,
+.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt,
+.isotope-layout.style-masonry.isotope-pagination .t-entry-excerpt p,
+.isotope-layout.style-metro.isotope-pagination .t-entry-excerpt,
+.isotope-layout.style-metro.isotope-pagination .t-entry-excerpt p,
 .owl-carousel .tmb .t-entry .t-entry-excerpt p {
   color: #4D4F53;
   font-size: 16px;
@@ -1492,6 +1495,8 @@ a.medium-weight-links, .medium-weight-links a {
 
 .newsletter-popup-body .form select {
   font-weight: bold;
+  background: transparent url("/wp-content/uploads/2018/12/dropdown.png") no-repeat 97% center;
+  background-size: 7px;
 }
 
 .pum-close.popmake-close:not(.btn) {
