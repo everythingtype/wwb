@@ -631,7 +631,10 @@ li.menu-item-button::before, i.menu-item-button::after {
   text-transform: none;
 }
 
-.isotope-container .tmb .t-inside .t-entry-visual, .owl-carousel-container .tmb .t-inside .t-entry-visual {
+.isotope-container .tmb .t-inside .t-entry-visual,
+.owl-carousel-container .tmb .t-inside .t-entry-visual,
+.isotope-container .tmb .t-inside .t-entry-visual .t-entry-visual-tc,
+.owl-carousel-container .tmb .t-inside .t-entry-visual .t-entry-visual-tc {
   height: 243px !important;
 }
 
@@ -697,7 +700,8 @@ animation: none !important;
   background-color: #c79900;
 }
 
-.team-members-section .isotope-container .tmb .t-inside .t-entry-visual {
+.team-members-section .isotope-container .tmb .t-inside .t-entry-visual,
+.team-members-section .isotope-container .tmb .t-inside .t-entry-visual .t-entry-visual-tc {
   height: 320px !important;
 }
 
