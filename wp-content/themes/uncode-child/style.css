@@ -308,56 +308,17 @@ footer ul.menu-smart li:last-child {
   border-right: none;
 }
 
-footer .follow {
-  padding: 0px !important;
-}
-
 footer .footer-bottom-section {
   padding-bottom: 111px;
-}
-
-footer .follow .textwidget div {
-  color: #ffffff;
-  font-family: 'LeMondeLivrePro';
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: 0.7px;
-  font-weight: bold;
-}
-
-footer .follow div {
-  text-align: center;
-  display: inline-block;
-}
-
-footer .follow .uncell {
-  text-align: left;
-}
-
-footer .follow .textwidget div {
-  position: relative;
-  bottom: 1px;
-}
-
-footer .follow .textwidget > div > div {
-  padding-right: 10px;
-}
-
-footer .follow .textwidget a {
-  padding-right: 10px;
-}
-
-footer .follow .textwidget > div > div:first-child {
-  bottom: 9px;
-}
-
-footer .follow a img {
-  margin: 0px !important;
 }
 
 footer .footer-last {
   background-color: #00338d;
   padding-bottom: 100px;
+}
+
+footer .social-icon .fa {
+  color: #ffffff !important;
 }
 
 article.post.type-post p, article.post.type-post li {
@@ -1054,8 +1015,16 @@ a.medium-weight-links, .medium-weight-links a {
   background-position: top center !important;
 }
 
-.landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6, .landing-page-header p {
+.landing-page-header h1, .landing-page-header h2, .landing-page-header h3, .landing-page-header h4, .landing-page-header h5, .landing-page-header h6 {
   color: #867A24;
+}
+
+.landing-page-header .text-lead p {
+  font-family: 'LeMondeLivrePro';
+  font-size: 16px !important;
+  color: #4D4F53 !important;
+  line-height: 22px;
+  font-weight: normal !important;
 }
 
 .author-post-container .author-profile .btn.btn-flat, .author-post-container .author-profile .btn.btn-flat:hover {
