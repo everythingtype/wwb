@@ -148,6 +148,7 @@ color: #D8B85C !important;
 .btn.btn-flat-gold, .loadmore-button .btn {
   background-color: #c79900 !important;
   color: white !important;
+  border: 1px solid #c79900 !important;
 }
 
 .style-light .btn-default:not(.btn-hover-nobg).btn-flat-gold:hover, .style-light .loadmore-button .btn-default:not(.btn-hover-nobg):hover, .btn.btn-flat-gold:hover {
