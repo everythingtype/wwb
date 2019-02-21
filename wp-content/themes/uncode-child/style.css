@@ -196,20 +196,20 @@ header .logo-container, header .logo-container.shrinked {
 
   .mobile-menu-button .lines, .mobile-menu-button .lines:before, .mobile-menu-button .lines:after {
     background: #ffffff;
-    width: 44px;
-    height: 5px;
+    width: 35px;
+    height: 3px;
   }
   
   .mobile-menu-button .lines:before {
-    top: 14px;
+    top: 10px;
   }
   
   .mobile-menu-button .lines:after {
-    top: -14px;
+    top: -10px;
   }
 
   .lines-button.x2.close .lines:before, .lines-button.x2.close .lines:after {
-    width: 44px;
+    width: 35px;
   }
 }
 
@@ -588,14 +588,16 @@ li.menu-item-button::before, i.menu-item-button::after {
   padding-left: 19px;
 }
 
-.isotope-container .tmb .t-inside .t-entry-date {
+.isotope-container .tmb .t-inside .t-entry-date,
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-date {
   font-family: 'LeMondeLivrePro';
   color: #4D4F53 !important;
   font-size: 12px;
   line-height: 16px;
 }
 
-.isotope-container .tmb .t-inside .t-entry-category a {
+.isotope-container .tmb .t-inside .t-entry-category a,
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category a {
   font-family: 'LeMondeLivrePro';
   color: #CEA62A !important;
   font-size: 14px;
@@ -603,7 +605,8 @@ li.menu-item-button::before, i.menu-item-button::after {
   text-transform: uppercase;
 }
 
-.isotope-container .tmb .t-inside .t-entry-category .fa {
+.isotope-container .tmb .t-inside .t-entry-category .fa,
+.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category .fa {
   display: none;
 }
 
@@ -690,38 +693,19 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .owl-carousel-container .owl-dots-outside .owl-dots .owl-dot.active span, .owl-carousel-container .owl-dots-outside .owl-dots .owl-dot:hover span {
-  /* -webkit-transform: unset;
-  -moz-transform: unset;
-  -o-transform: unset;
-  -ms-transform: unset;
-  transform: unset; */
-
-  /*CSS transitions*/
--o-transition-property: none !important;
--moz-transition-property: none !important;
--ms-transition-property: none !important;
--webkit-transition-property: none !important;
-transition-property: none !important;
-/*CSS transforms*/
--o-transform: none !important;
--moz-transform: none !important;
--ms-transform: none !important;
--webkit-transform: none !important;
-transform: none !important;
-/*CSS animations*/
--webkit-animation: none !important;
--moz-animation: none !important;
--o-animation: none !important;
--ms-animation: none !important;
-animation: none !important;
-
-
   background-color: #c79900;
 }
 
 .team-members-section .isotope-container .tmb .t-inside .t-entry-visual,
 .team-members-section .isotope-container .tmb .t-inside .t-entry-visual .t-entry-visual-tc {
   height: 320px !important;
+}
+
+@media (max-width: 569px) {
+  .team-members-section .isotope-container .tmb .t-inside .t-entry-visual,
+  .team-members-section .isotope-container .tmb .t-inside .t-entry-visual .t-entry-visual-tc {
+    height: 460px !important;
+  } 
 }
 
 .team-members-section .isotope-container .tmb .t-inside .t-entry-member-social .fa {
@@ -1197,13 +1181,15 @@ a.medium-weight-links, .medium-weight-links a {
 .isotope-layout.style-metro.isotope-pagination .t-entry-excerpt,
 .isotope-layout.style-metro.isotope-pagination .t-entry-excerpt p,
 .owl-carousel .tmb .t-entry .t-entry-excerpt p {
+  font-family: "LeMondeLivrePro";
   color: #4D4F53;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px;
 }
 
-.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a {
+.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a,
+.owl-carousel .tmb .t-entry .t-entry-readmore a {
   font-size: 16px !important;
   font-weight: bold !important;
   border: none !important;
@@ -1213,7 +1199,8 @@ a.medium-weight-links, .medium-weight-links a {
   letter-spacing: normal;
 }
 
-.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a:hover {
+.isotope-layout.style-masonry.isotope-pagination .t-entry-readmore a:hover,
+.owl-carousel .tmb .t-entry .t-entry-readmore a:hover {
   border: none !important;
 }
 
@@ -1275,33 +1262,12 @@ a.medium-weight-links, .medium-weight-links a {
   line-height: 22px;
 }
 
-.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-date {
-  color: #4D4F53 !important;
-  font-family: "LeMondeLivrePro";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: normal;
-}
-
 .owl-carousel .tmb .t-entry .t-entry-type {
   color: #4D4F53 !important;
   font-family: "LeMondeLivrePro";
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
-}
-
-.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category a {
-  color: #CEA62A !important;
-  font-family: "LeMondeLivrePro";
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.owl-carousel .tmb .t-entry .t-entry-meta .t-entry-category .fa {
-  display: none;
 }
 
 .owl-carousel .tmb .t-entry .t-entry-title {
@@ -1311,17 +1277,6 @@ a.medium-weight-links, .medium-weight-links a {
   letter-spacing: -0.55px;
   line-height: 30px;
   font-weight: normal;
-}
-
-.owl-carousel .tmb .t-entry .t-entry-readmore a {
-  color: #CEA62A !important;
-  font-family: "LeMondeLivrePro";
-  font-size: 16px !important;
-  font-weight: bold !important;
-  line-height: 22px !important;
-  padding: 0px !important;
-  border: none !important;
-  text-transform: uppercase;
 }
 
 .post-footer, .row-navigation {
@@ -1534,6 +1489,7 @@ a.medium-weight-links, .medium-weight-links a {
     width: 270px !important;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
@@ -1652,9 +1608,9 @@ a.medium-weight-links, .medium-weight-links a {
 /* End Donate Form */
 
 @media (max-width: 959px) {
-  /* .isotope-layout.style-metro[data-layout="cellsByRow"] .t-entry-excerpt {
-    display: none;
-  } */
+  .t-entry-readmore {
+    display: none !important;
+  }
 
   .isotope-layout.style-metro[data-layout="cellsByRow"] .t-entry-text-tc {
     padding-top: 0px !important;
