@@ -6,9 +6,9 @@
     if ($(window).width() <= 959 ) {
       truncateAllBlogTitles();
       $( document ).ajaxComplete(truncateAllBlogTitles);
-
-      addFirstLevelItemOnDropdownMenuNav();
-    }    
+    }
+    
+    addFirstLevelItemOnDropdownMenuNav();
   });
 
   function truncateAllBlogTitles() {
