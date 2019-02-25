@@ -1237,7 +1237,9 @@ UNCODE.isotopeLayout = function() {
 								if (isNaN(delayAttr)) delayAttr = 100;
 								delay -= showed;
 								var objTimeout = requestTimeout(function() {
-									element.removeClass('zoom-reverse').addClass('start_animation');
+									if ($(window).width > 959) {
+										element.removeClass('zoom-reverse').addClass('start_animation');
+									}
 									showed = parent.index();
 								}, delay * delayAttr)
 								parent.data('objTimeout', objTimeout);
@@ -1275,7 +1277,7 @@ UNCODE.isotopeLayout = function() {
 					scrollSpeed = (SiteParameters.constant_scroll == 'on') ? Math.abs(delta) / parseFloat(SiteParameters.scroll_speed) : SiteParameters.scroll_speed;
 				if (scrollSpeed < 1000 && SiteParameters.constant_scroll == 'on') scrollSpeed = 1000;
 
-				if ( !UNCODE.isFullPage ) {
+				if ( !UNCODE.isFullPage && $(window).width() > 959 ) {
 					if (scrollSpeed == 0) {
 						$('html, body').scrollTop(calc_scroll);
 					} else {
@@ -1444,21 +1446,25 @@ UNCODE.isotopeLayout = function() {
 				var $resultItems = $(data).find('#' + isotopeId + ' .isotope-layout').html(),
 					$resultPagination = $(data).find('#' + isotopeId + ' .pagination');
 				isotopeWrapper.addClass('isotope-reloaded');
-				requestTimeout(function() {
-					isotopeWrapper.removeClass('isotope-loading');
-					isotopeWrapper.removeClass('isotope-reloaded');
-				}, 500);
+				if ($(window).width() > 959) {
+					requestTimeout(function() {
+						isotopeWrapper.removeClass('isotope-loading');
+						isotopeWrapper.removeClass('isotope-reloaded');
+					}, 500);
+				}
 				$.each($('> .tmb > .t-inside', isotopeContainer), function(index, val) {
-					var parent = $(val).parent(),
-						objTimeout = parent.data('objTimeout');
-					if (objTimeout) {
-						$(val).removeClass('zoom-reverse').removeClass('start_animation')
-						clearRequestTimeout(objTimeout);
-					}
-					if ($(val).hasClass('animate_when_almost_visible')) {
-						$(val).addClass('zoom-reverse').removeClass('start_animation');
-					} else {
-						$(val).addClass('animate_when_almost_visible zoom-reverse zoom-in force-anim');
+					if ($(window).width() > 959) {
+						var parent = $(val).parent(),
+							objTimeout = parent.data('objTimeout');
+						if (objTimeout) {
+							$(val).removeClass('zoom-reverse').removeClass('start_animation')
+							clearRequestTimeout(objTimeout);
+						}
+						if ($(val).hasClass('animate_when_almost_visible')) {
+							$(val).addClass('zoom-reverse').removeClass('start_animation');
+						} else {
+							$(val).addClass('animate_when_almost_visible zoom-reverse zoom-in force-anim');
+						}
 					}
 				});
 				requestTimeout(function() {
@@ -1488,7 +1494,7 @@ UNCODE.isotopeLayout = function() {
 					$(this).isotope({
 						itemSelector: $itemSelector,
 						layoutMode: $layoutMode,
-						transitionDuration: transitionDuration[index],
+						transitionDuration: $(window).width > 959 ? transitionDuration[index] : 0,
 						masonry: {
 							columnWidth: colWidth(index)
 						},
