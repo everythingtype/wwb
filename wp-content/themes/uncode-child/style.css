@@ -424,7 +424,7 @@ li.menu-item-button::before, i.menu-item-button::after {
 }
 
 .hero-header h2 {
-  text-shadow: 0px 2px 11px rgba(0,0,0,0.8);
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
 }
 
 @media (max-width: 959px) {
