@@ -1372,11 +1372,13 @@ a.medium-weight-links, .medium-weight-links a {
   font-weight: normal;
 }
 
-.single-jobs article ul {
+.single-jobs article ul,
+.page-id-74404 /* Leadership and Diversity for Innovation Program page */ article ul:not(.nav) {
   list-style-type: none !important;
 }
 
-.single-jobs article ul li:before {
+.single-jobs article ul li:before,
+.page-id-74404 /* Leadership and Diversity for Innovation Program page */ article ul:not(.nav) li:before {
   content: "–";
   position: absolute;
   margin-left: -1em;
