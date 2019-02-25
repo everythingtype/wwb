@@ -1405,6 +1405,11 @@ a.medium-weight-links, .medium-weight-links a {
     when using a on three column grid system*/
     min-height: 520px !important;
   }
+
+  .isotope-system.isotope-general-light.small-content .isotope-container[data-layout="cellsByRow"] .tmb {
+    min-height: unset !important;
+    height: 420px !important;
+  }
 }
 
 
