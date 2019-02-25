@@ -2,6 +2,12 @@
   $( document ).ready(function() {
     $('.team-members-section #board').remove();
     $('.team-members-section div[data-id="staff"]').find('.t-entry-visual').remove();
+    $('.team-members-section .tab-content a').each(function(index, anchorTag) {
+      var $anchorTag = $(anchorTag);
+      if ($anchorTag.html().trim() === "") {
+        $anchorTag.remove();
+      }
+    });
 
     if ($(window).width() <= 959 ) {
       truncateAllBlogTitles();
