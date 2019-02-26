@@ -1297,7 +1297,8 @@ a.medium-weight-links, .medium-weight-links a {
 .partners-location-section p,
 .partners-location-section p > a,
 .partners-location-section p > strong,
-.partners-location-section em {
+.partners-location-section em,
+.partners-location-section ul li {
   color: #757575 !important;
   font-size: 16px;
   line-height: 22px;
