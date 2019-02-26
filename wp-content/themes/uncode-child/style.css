@@ -355,6 +355,10 @@ footer .footer-last {
   padding-bottom: 20px;
 }
 
+footer .footer-last .uncell {
+  padding-top: 44px;
+}
+
 footer .social-icon .fa {
   color: #ffffff !important;
 }
@@ -369,6 +373,10 @@ footer .social-icon .fa {
     padding-bottom: 50px;
   }
 
+  footer .footer-last .uncell {
+    padding-top: 27px;
+  }
+
   .footer-copyright p {
     text-align: center;
   }
@@ -377,7 +385,7 @@ footer .social-icon .fa {
 @media (max-width : 480px) {
   footer button.btn {
     position: relative;
-    left: 20px;
+    left: 15px;
   }
 }
 

@@ -122,9 +122,9 @@ if ($footer_social !== 'off') {
 }
 
 if ($footer_icons !== '') {
-	$footer_icons = '<div class="uncell col-lg-6 pos-middle text-'.($footer_position === 'center' ? $footer_position : $alignArray[!array_search($footer_position, $alignArray)]).'">'
+	$footer_icons = '<div class="uncell col-lg-6 pos-top text-'.($footer_position === 'center' ? $footer_position : $alignArray[!array_search($footer_position, $alignArray)]).'">'
 		. $footer_icons . 
-		'<div style="margin-top: 20px"><button class="btn btn-flat btn-flat-gold open-modal">Sign Up for our Newsletter</button></div>'.
+		'<div style="margin-top: 10px"><button class="btn btn-flat btn-flat-gold open-modal">Get Involved</button></div>'.
 		'<div style="margin-top: 20px" class="footer-copyright"><p>© 2019 Women\'s World Banking</p></div>'.
 	'</div>';
 }
