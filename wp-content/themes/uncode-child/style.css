@@ -394,14 +394,6 @@ footer .social-icon .fa {
   }
 }
 
-article.post.type-post p, article.post.type-post li {
-  font-family: 'Roboto', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #4D4F53;
-  line-height: 24px;
-}
-
 article.post.type-post blockquote p {
   font-family: 'LeMondeLivrePro';
   font-size: 30px;
@@ -995,7 +987,8 @@ li.menu-item-button::before, i.menu-item-button::after {
 p,
 .body-copy-2, .body-copy-2 p, 
 .single-events .icon-box-content, .single-events .icon-box-content,
-.single-events .icon-box-content, .single-events .icon-box-content p {
+.single-events .icon-box-content, .single-events .icon-box-content p,
+article.post.type-post p, article.post.type-post li {
   color: #2F2F2F;
   font-size: 18px;
   font-weight: 300;
