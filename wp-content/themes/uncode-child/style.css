@@ -162,6 +162,10 @@ color: #D8B85C !important;
   border: 1px solid #979797 !important;
 }
 
+.isotope-footer.half-gutter .isotope-footer-inner .loadmore-button {
+  margin-top: 0px;
+}
+
 .row-content-container .row {
   max-width: 928px !important;
 }
