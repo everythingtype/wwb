@@ -307,10 +307,6 @@ body.menu-mobile-centered .main-menu-container .menu-horizontal .menu-horizontal
   }
 }
 
-footer {
-  background-color: #4d4f53;
-}
-
 footer p {
   color: #ffffff !important;
   margin-top: 0px !important;
@@ -328,6 +324,14 @@ footer p {
   font-size: 12px;
   font-weight: 300;
   line-height: 18px;
+}
+
+.footer-menu-section {
+  margin-top: 64px;
+}
+
+.footer-menu-section .row {
+  padding-top: 130px !important;
 }
 
 footer .wpb_content_element, footer .heading-text {
