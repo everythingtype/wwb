@@ -1569,7 +1569,7 @@ a.medium-weight-links, .medium-weight-links a {
 
 @media (max-width: 959px) {
   .menu-container .logo-container {
-    padding-left: 10px !important;
+    padding-left: 15px !important;
     padding-right: 10px !important;
   }
 
@@ -1582,11 +1582,11 @@ a.medium-weight-links, .medium-weight-links a {
   }
   
   .logo-container .logo-image {
-    background-image: url('/wp-content/uploads/2018/12/mobile-header-logo.png');
+    background-image: url('/wp-content/uploads/2018/12/WWB_logo_transparent.png');
     width: 270px !important;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
   }
 }
 
