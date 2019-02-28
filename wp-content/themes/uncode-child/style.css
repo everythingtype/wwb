@@ -1756,3 +1756,18 @@ a.medium-weight-links, .medium-weight-links a {
     border-right: none;
   }
 }
+
+.small-margin-top-elements h1,
+.small-margin-top-elements h2,
+.small-margin-top-elements h3,
+.small-margin-top-elements h4,
+.small-margin-top-elements h5,
+.small-margin-top-elements h6,
+.small-margin-top-elements p {
+  margin-top: 5px;
+}
+
+.heading-max-width + .icon-box-content .icon-box-heading {
+  max-width: 200px;
+  margin: 0 auto;
+}
