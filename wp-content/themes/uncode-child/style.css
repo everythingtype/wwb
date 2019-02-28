@@ -609,7 +609,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   color: #757575;
 }
 
-.impact-section p {
+.impact-section p, .impact-section p strong {
   font-family: 'LeMondeLivrePro';
   font-size: 22px;
   color: #4D4F53;
