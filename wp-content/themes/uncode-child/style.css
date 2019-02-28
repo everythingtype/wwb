@@ -1165,6 +1165,22 @@ a.medium-weight-links, .medium-weight-links a {
   color: #4D4F53;
 }
 
+.single-post .header-content-inner .post-date, .single-post .header-content-inner h1 {
+  color: #757575;
+}
+
+.single-post .header-content-inner h1 {
+  max-width: 878px;
+}
+
+.single-post .feature-text {
+  max-width: 874px;
+}
+
+.single-post div[class="uncode_text_column"] {
+  max-width: 790px;
+}
+
 .header-content-inner .post-date {
   font-family: "LeMondeLivrePro";
   font-size: 14px;
