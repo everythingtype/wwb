@@ -640,6 +640,18 @@ li.menu-item-button::before, i.menu-item-button::after {
   max-width: 37px !important;
 }
 
+.icon-box-icon.one-x-width img {
+  max-width: 50px !important;
+}
+
+.icon-box-icon.one-x-width + .icon-box-content h4 {
+  margin-bottom: 0px;
+}
+
+.icon-box-icon.one-x-width + .icon-box-content p.text-top-reduced {
+  display: none;
+}
+
 .icon-box-icon.two-x-width img {
   max-width: 74px !important;
 }
