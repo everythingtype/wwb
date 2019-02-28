@@ -1733,7 +1733,7 @@ a.medium-weight-links, .medium-weight-links a {
 }
 
 @media (min-width: 1024px) {
-  .tab-pane[data-id="sponsorship"] {
+  .tab-pane[data-id="sponsorship"] .page-intro-info-section {
     width: 1024px;
     margin: 0 auto;
   }
