@@ -821,6 +821,11 @@ li.menu-item-button::before, i.menu-item-button::after {
 
 .page-intro-info-section h2 {
   color: #867A24;
+  max-width: 580px;
+}
+
+.post-44894 .page-intro-info-section h2 {
+  max-width: unset;
 }
 
 .sepia-border h2 {
