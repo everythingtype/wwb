@@ -1771,3 +1771,8 @@ a.medium-weight-links, .medium-weight-links a {
   max-width: 200px;
   margin: 0 auto;
 }
+
+.our-blueprint-section .approach {
+  max-width: 330px;
+  margin: 0 auto;
+}
