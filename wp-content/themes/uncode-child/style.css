@@ -257,6 +257,10 @@ header.navbar .menu-item a:hover, header.navbar .menu-item a:active {
   text-shadow: 0 0 0.65px #fff, 0 0 0.65px #fff;
 }
 
+header.navbar .menu-item a.dropdown-toggle:hover, header.navbar .menu-item a.dropdown-toggle:active {
+  text-shadow: unset;
+}
+
 body.menu-mobile-centered .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart li.menu-item-link > a {
   text-transform: uppercase !important;
 }
