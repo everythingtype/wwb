@@ -1768,7 +1768,7 @@ a.medium-weight-links, .medium-weight-links a {
     width: 1024px;
   }
   
-  .tab-pane[data-id="sponsorship"] .col-lg-2 {
+  .tab-pane[data-id="sponsorship"] .page-intro-info-section .col-lg-2 {
     width: 16.666666666666664%;
     display: table-cell;
     height: 100%;
