@@ -1182,7 +1182,8 @@ a.medium-weight-links, .medium-weight-links a {
   max-width: 874px;
 }
 
-.single-post div[class="uncode_text_column"] {
+.single-post div[class="uncode_text_column"],
+.single-post .post-content .row.row-parent > * {
   max-width: 790px;
 }
 
@@ -1207,8 +1208,6 @@ a.medium-weight-links, .medium-weight-links a {
 
 .citation-with-image {
   max-width: 500px;
-  padding-top: 43px;
-  padding-bottom: 27px;
 }
 
 .citation-with-image h5 {
