@@ -253,6 +253,10 @@ header.navbar .menu-item a, header.navbar .menu-item a:hover, header.navbar .men
   font-weight: normal !important;
 }
 
+header.navbar .menu-item a:hover, header.navbar .menu-item a:active {
+  text-shadow: 0 0 0.65px #fff, 0 0 0.65px #fff;
+}
+
 body.menu-mobile-centered .main-menu-container .menu-horizontal .menu-horizontal-inner ul.menu-smart li.menu-item-link > a {
   text-transform: uppercase !important;
 }
@@ -279,6 +283,7 @@ body.menu-mobile-centered .main-menu-container .menu-horizontal .menu-horizontal
   color: #ffffff !important;
   background-color: #00338d !important;
   font-weight: 500 !important;
+  text-shadow: unset;
 }
 
 @media(max-width: 959px) {
