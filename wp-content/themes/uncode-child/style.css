@@ -605,6 +605,7 @@ li.menu-item-button::before, i.menu-item-button::after {
   margin-top: 10px;
   font-weight: 500 !important; /* Book typeface */
   margin-bottom: 10px;
+  color: #4D4F53;
 }
 
 .billion {
