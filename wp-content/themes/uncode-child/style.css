@@ -55,6 +55,10 @@ h3 {
   color: #4D4F53;
 }
 
+.style-light h3 {
+  color: #4D4F53;
+}
+
 h4 {
   letter-spacing: -0.3px;
   line-height: 1.36;
