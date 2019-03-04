@@ -20,3 +20,17 @@ function theme_enqueue_styles()
 	wp_enqueue_script('child-scripts', get_stylesheet_directory_uri() . '/app.js', array( 'jquery' ), $resources_version, $in_footer);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+  echo '<style>
+	#TB_overlay {
+    z-index: 60000 !important;
+	}
+
+	body.pardot-modal-open #TB_window {
+		z-index: 60001 !important;
+	}
+  </style>';
+}
