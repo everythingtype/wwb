@@ -1237,9 +1237,9 @@ UNCODE.isotopeLayout = function() {
 								if (isNaN(delayAttr)) delayAttr = 100;
 								delay -= showed;
 								var objTimeout = requestTimeout(function() {
-									if ($(window).width > 959) {
+									/* if ($(window).width > 959) {
 										element.removeClass('zoom-reverse').addClass('start_animation');
-									}
+									} */
 									showed = parent.index();
 								}, delay * delayAttr)
 								parent.data('objTimeout', objTimeout);
@@ -1277,7 +1277,7 @@ UNCODE.isotopeLayout = function() {
 					scrollSpeed = (SiteParameters.constant_scroll == 'on') ? Math.abs(delta) / parseFloat(SiteParameters.scroll_speed) : SiteParameters.scroll_speed;
 				if (scrollSpeed < 1000 && SiteParameters.constant_scroll == 'on') scrollSpeed = 1000;
 
-				if ( !UNCODE.isFullPage && $(window).width() > 959 ) {
+				/* if ( !UNCODE.isFullPage && $(window).width() > 959 ) {
 					if (scrollSpeed == 0) {
 						$('html, body').scrollTop(calc_scroll);
 					} else {
@@ -1291,7 +1291,7 @@ UNCODE.isotopeLayout = function() {
 							}
 						});
 					}
-				}
+				} */
 
 				loadIsotope($(this));
 				evt.preventDefault();
@@ -1446,13 +1446,13 @@ UNCODE.isotopeLayout = function() {
 				var $resultItems = $(data).find('#' + isotopeId + ' .isotope-layout').html(),
 					$resultPagination = $(data).find('#' + isotopeId + ' .pagination');
 				isotopeWrapper.addClass('isotope-reloaded');
-				if ($(window).width() > 959) {
+				/* if ($(window).width() > 959) {
 					requestTimeout(function() {
 						isotopeWrapper.removeClass('isotope-loading');
 						isotopeWrapper.removeClass('isotope-reloaded');
 					}, 500);
-				}
-				$.each($('> .tmb > .t-inside', isotopeContainer), function(index, val) {
+				} */
+				/* $.each($('> .tmb > .t-inside', isotopeContainer), function(index, val) {
 					if ($(window).width() > 959) {
 						var parent = $(val).parent(),
 							objTimeout = parent.data('objTimeout');
@@ -1466,7 +1466,7 @@ UNCODE.isotopeLayout = function() {
 							$(val).addClass('animate_when_almost_visible zoom-reverse zoom-in force-anim');
 						}
 					}
-				});
+				}); */
 				requestTimeout(function() {
 					if (isotopeContainer.data('isotope')) {
 						isotopeContainer.html($resultItems).isotope('reloadItems', onLayout(isotopeContainer, 0));
@@ -1494,7 +1494,7 @@ UNCODE.isotopeLayout = function() {
 					$(this).isotope({
 						itemSelector: $itemSelector,
 						layoutMode: $layoutMode,
-						transitionDuration: $(window).width > 959 ? transitionDuration[index] : 0,
+						transitionDuration: /* $(window).width > 959 ? transitionDuration[index] :  */0,
 						masonry: {
 							columnWidth: colWidth(index)
 						},
