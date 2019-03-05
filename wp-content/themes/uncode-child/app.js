@@ -15,6 +15,7 @@
     }
     
     addFirstLevelItemOnDropdownMenuNav();
+    addSpinnerElementAbovePagination();
   });
 
   function truncateAllBlogTitles() {
@@ -49,5 +50,9 @@
         $(item).children('a.dropdown-toggle').removeAttr('href');
       }
     });
+  }
+
+  function addSpinnerElementAbovePagination() {
+    $('.isotope-pagination').after('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
   }
 })(jQuery)
