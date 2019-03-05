@@ -1810,3 +1810,9 @@ a.medium-weight-links, .medium-weight-links a {
     display: none;
   }
 }
+
+@media (max-width: 1023px) {
+  .no-margin-top-on-mobile {
+    margin-top: 0px !important;
+  }
+}
