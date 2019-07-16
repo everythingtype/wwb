@@ -107,6 +107,21 @@ a {
   text-align: center;
 }
 
+.next_span {
+  display: block;
+  color: #cba239;
+  font-size: 20px !important;
+  font-family: 'LeMondeLivrePro' !important;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -5px;
+  background-color: #fff;
+}
+
+
 .paragraph-text.two-column p {
   columns: 2;
 }
