@@ -316,7 +316,7 @@ a {
 /* INVERTED MENU STYLING*/
 .ar-menu-div.inverted {
   background-color: #cba239 !important;
-  border-top: 2px solid #cba239 !important;
+  border-top: 2px solid #fff !important;
 }
 
 .ar-menu-div.inverted:hover {
