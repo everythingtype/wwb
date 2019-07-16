@@ -316,17 +316,16 @@ a {
 /* INVERTED MENU STYLING*/
 .ar-menu-div.inverted {
   background-color: #cba239 !important;
-  border-top: 2px solid #fff !important;
+  border-top: 2px solid #cba239 !important;
 }
 
 .ar-menu-div.inverted:hover {
   background-color: #fff !important;
-  border-top: 2px solid #cba239 !important;
 }
 
 .ar-menu-btn.invert {
   color: #fff !important;
-  padding: 0px 36px 0px 36px;
+  padding: 60px 36px 0px 36px;
 }
 
 .ar-menu-btn.invert:hover {
