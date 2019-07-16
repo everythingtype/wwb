@@ -321,6 +321,7 @@ a {
 
 .ar-menu-div.inverted:hover {
   background-color: #fff !important;
+  border-top: 2px solid #cba239 !important;
 }
 
 .ar-menu-btn.invert {
