@@ -107,21 +107,6 @@ a {
   text-align: center;
 }
 
-.next_span {
-  display: block;
-  color: #cba239;
-  font-size: 20px !important;
-  font-family: 'LeMondeLivrePro' !important;
-  text-align: center;
-  font-weight: 400;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: -5px;
-  background-color: #fff;
-}
-
-
 .paragraph-text.two-column p {
   columns: 2;
 }
@@ -341,6 +326,7 @@ a {
 
 .ar-menu-btn.invert {
   color: #fff !important;
+  padding: 60px 36px 0px 36px;
 }
 
 .ar-menu-btn.invert:hover {
@@ -612,9 +598,6 @@ p.fontsize-142651 {
   border-right-style: none !important;
 }
 
-.next-text {
-  border-top: 2px solid #cba239 !important;
-}
 
 /*MOBILE*/
 @media only screen and (max-width: 569px) {
