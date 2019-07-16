@@ -326,7 +326,7 @@ a {
 
 .ar-menu-btn.invert {
   color: #fff !important;
-  padding: 60px 36px 0px 36px;
+  padding: 0px 36px 0px 36px;
 }
 
 .ar-menu-btn.invert:hover {
