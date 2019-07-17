@@ -706,7 +706,7 @@ p.fontsize-142651 {
   .ar-menu-btn {
     font-size: 18px !important;
     line-height: 18px !important;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px !important;
   }
 
   a.ar-menu-btn.invert.nextone:after {
