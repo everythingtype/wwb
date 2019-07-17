@@ -740,7 +740,7 @@ p.fontsize-142651 {
     display: inline-block !important;
   }*/
   .accordion-column {
-    display: inline-block !important;
+    display: block !important;
     padding-right: 0px;
     margin-top: 15px;
     margin-bottom: 15px;
