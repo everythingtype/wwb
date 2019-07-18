@@ -190,9 +190,8 @@ a {
 
 .bluearrow-down {
     position: relative !important;
-    bottom: 0px !important;
     margin: auto !important;
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .financial-tabs {
