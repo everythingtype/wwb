@@ -27,7 +27,7 @@ a {
 }
 
 .info-large p {
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 180px !important;
   color: #b8631f !important;
   line-height: 216px !important;
@@ -41,7 +41,7 @@ a {
 }
 
 .header-text p {
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 95px;
   color: #fff;
   line-height: 100px;
@@ -49,7 +49,7 @@ a {
 }
 
 .infographic-text p {
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000;
@@ -73,13 +73,13 @@ a {
 
 .sub-header-text p {
   font-size: 25px;
-  font-family: 'LeMondeLivrePro';
+  font-family: LeMondeLivrePro, Times, serif;
   line-height: 35px;
   color: #fff;
 }
 
 .title-text p {
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 40px;
   line-height: 42px;
   color: #00338d;
@@ -87,7 +87,7 @@ a {
 }
 
 .paragraph-text p {
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   font-size: 20px !important;
   font-weight: 400 !important;
   line-height: 30px;
@@ -99,7 +99,7 @@ a {
 }
 
 .paragraph-text02 {
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   font-size: 20px !important;
   font-weight: 800 !important;
   line-height: 30px;
@@ -143,7 +143,7 @@ a {
 .intro-letter-text p {
   color: #00338d;
   font-size: 25px;
-  font-family: 'LeMondeLivrePro';
+  font-family: LeMondeLivrePro, Times, serif;
   line-height: 35px;
 }
 
@@ -151,7 +151,7 @@ a {
   color: #cba239;
   font-size: 35px;
   line-height: 45px;
-  font-family: 'LeMondeLivrePro';
+  font-family: LeMondeLivrePro, Times, serif;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ a {
   color: #fff;
   line-height: 30px;
   font-size: 20px;
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border: 0px !important;
 }
@@ -223,7 +223,7 @@ a {
 .ar-menu-btn {
   color: #cba239 !important;
   display: block;
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 40px !important;
   line-height: 65px !important;
   font-weight: 800 !important;
@@ -261,7 +261,7 @@ a {
 
 .menu-text {
   font-size: 20px !important;
-  font-family: 'LeMondeLivrePro' !important;
+  font-family: LeMondeLivrePro, Times, serif !important;
   line-height: 65px;
   color: #cba239;
   transition: all 0.25s;
@@ -322,7 +322,6 @@ a {
 .ar-menu-div.inverted:hover {
   background-color: #fff !important;
   border-top: 2px solid #cba239 !important;
-
 }
 
 .ar-menu-btn.invert {
@@ -335,7 +334,7 @@ a {
 }
 
 a.ar-menu-btn.invert.nextone:after {
-  font-family: 'LeMondeLivrePro' !important;
+  font-family: LeMondeLivrePro, Times, serif !important;
   content: '→';
   position: absolute;
   right: 0;
@@ -346,7 +345,7 @@ a.ar-menu-btn.invert.nextone:after {
 
 .network-accordion .panel-title a {
   font-size: 95px !important;
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   line-height: 100px;
   font-weight: 800 !important;
   color: #fff;
@@ -376,7 +375,7 @@ a.ar-menu-btn.invert.nextone:after {
   color: #fff !important;
   font-size: 20px;
   line-height: 20px;
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 800;
 }
 
@@ -403,7 +402,7 @@ a.ar-menu-btn.invert.nextone:after {
   color: #fff !important;
   font-size: 20px;
   line-height: 20px;
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 800;
   background-color: #1475cc;
 }
@@ -429,7 +428,7 @@ p.fontsize-142651 {
   color: #fff !important;
   font-size: 20px;
   line-height: 20px;
-  font-family: 'HelveticaNeue';
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 800;
 }
 
@@ -457,7 +456,7 @@ p.fontsize-142651 {
 .accordion-title {
   display: block;
   font-size: 95px !important;
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   line-height: 90px;
   font-weight: 800 !important;
   color: #fff !important;
@@ -529,7 +528,7 @@ p.fontsize-142651 {
 .accordion-content>div {
   color: #00338d !important;
   font-size: 20px !important;
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   line-height: 30px;
 }
 
@@ -562,7 +561,7 @@ p.fontsize-142651 {
 }
 
 .nav-tabs li>a>span {
-  font-family: 'HelveticaNeue' !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   font-size: 20px !important;
   color: #fff !important;
   text-transform: capitalize !important;
@@ -707,7 +706,7 @@ p.fontsize-142651 {
   .ar-menu-btn {
     font-size: 18px !important;
     line-height: 18px !important;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px !important;
   }
 
   a.ar-menu-btn.invert.nextone:after {
@@ -741,7 +740,7 @@ p.fontsize-142651 {
     display: inline-block !important;
   }*/
   .accordion-column {
-    display: inline-block !important;
+    display: block !important;
     padding-right: 0px;
     margin-top: 15px;
     margin-bottom: 15px;
