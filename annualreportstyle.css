@@ -160,7 +160,7 @@ a {
 }
 
 .lemonde30 {
-  font-family: "LeMondeLivrePro";
+  font-family: 'LeMondeLivrePro', Times, serif;
   font-size: 30px;
   line-height: 40px;
   color: #fff;
