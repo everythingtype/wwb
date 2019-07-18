@@ -189,12 +189,9 @@ a {
 }
 
 .bluearrow-down {
-  position: relative !important;
-  bottom: 0px !important;
-  margin-left: 50%;
-  margin-right: 50%;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+    position: relative !important;
+    bottom: 0px !important;
+    margin: auto !important;
   transform: rotate(180deg);
 }
 
@@ -910,4 +907,9 @@ p.fontsize-142651 {
   
   .wwb-img {
     padding-top: 30px !important;
+}
+  
+  .bluearrow-down {
+        bottom: -55px !important;
+  }
 }
