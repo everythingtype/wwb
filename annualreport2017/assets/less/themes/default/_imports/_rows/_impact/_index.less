@@ -1,0 +1,491 @@
+.flex-row {
+  max-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.impact
+{
+  background-color: @lightest-gray;
+  .container {
+    position: relative;
+    padding-bottom: 100px;
+    @media screen and (max-width: @screen-sm)
+    {
+      padding-bottom: 40px;
+    }
+  }
+
+  .impact-hero
+  {
+    img
+    {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .impact-content
+  {
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: @screen-sm)
+    {
+      margin-top: -200px;
+    }
+
+    @media screen and (max-width: @screen-sm)
+    {
+      margin-top: -100px;
+    }
+    .icon-line-wrapper
+    {
+      display: inline-block;
+      .icon
+      {
+        img
+        {
+          width: 62px;
+          height: 62px;
+          @media screen and (max-width: @screen-sm)
+          {
+            width: 52px;
+            height: 52px;
+          }
+        }
+
+        .dotted-line
+        {
+          border-left: dotted @white 1px;
+          margin: 0 auto;
+          width: 1px;
+          @media screen and (max-width: @screen-sm)
+          {
+            height: 30px;
+          }
+          @media screen and (min-width: @screen-sm)
+          {
+            height: 60px;
+
+          }
+        }
+      }
+    }
+
+    .content
+    {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      background-color: @white;
+      margin-bottom: 30px;
+      width: calc(~"100% - 15px");
+      -webkit-box-shadow: 15px 15px 0px 0px @blue;
+      -moz-box-shadow: 15px 15px 0px 0px @blue;
+      box-shadow: 15px 15px 0px 0px @blue;
+
+      @media screen and (max-width: @screen-sm)
+      {
+        width: 100%;
+        flex-direction: column;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+      }
+
+      .credit {
+        position: absolute;
+        top: -30px;
+        right: 0;
+
+        @media screen and (max-width: @screen-sm)
+        {
+          top: -20px;
+        }
+
+        p {
+          font-size: 16px;
+          color: @white;
+        }
+      }
+
+      .left
+      {
+        @media screen and (min-width: @screen-md)
+        {
+          padding: 0 30px 20px;
+        }
+        @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+        {
+          padding: 0 30px 20px;
+        }
+        @media screen and (max-width: @screen-sm)
+        {
+          padding: 0 25px 40px;
+        }
+        h2.title
+        {
+          line-height: 1.1em;
+          color: @gray;
+          border-left: 1.5px solid;
+          margin-top: 0;
+          @media screen and (min-width: @screen-md)
+          {
+            padding: 20px 30px 40px 30px;
+          }
+          @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+          {
+            padding: 20px 0px 20px 20px;
+          }
+          @media screen and (max-width: @screen-sm)
+          {
+            padding: 15px 20px;
+          }
+        }
+        .intro {
+          padding-top: 10px;
+          padding-left: 30px;
+          border-left: 2px solid @blue;
+          margin-bottom: 30px;
+
+          h2 {
+            margin-bottom: 20px;
+          }
+        }
+        .left-content
+        {
+          @media screen and (max-width: @screen-sm)
+          {
+            padding: 0px;
+          }
+          @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+          {
+            padding: 0px 0px 0px 20px;
+          }
+          @media screen and (min-width: @screen-md)
+          {
+            margin-top: -15px;
+            padding-right: 30px;
+            padding-bottom: 0;
+            padding-left: 30px;
+          }
+
+          a {
+            text-decoration: underline;
+          }
+
+          .impact-description
+          {
+            line-height: 1.5em;
+            color: @gray;
+            font-style: italic;
+            margin-top: -13px;
+            font-size: 19px;
+            @media screen and (min-width: @screen-sm)
+            {
+              margin-bottom: 30px;
+            }
+            @media screen and (max-width: @screen-sm)
+            {
+              margin-top: 10px;
+              font-size: 16px;
+              margin-bottom: 20px;
+            }
+          }
+          .impact-number
+          {
+            .number
+            {
+              .sans-serif();
+              font-weight: bold;
+              line-height: 1em;
+              @media screen and (min-width: @screen-sm)
+              {
+                font-size: 60px;
+              }
+              @media screen and (max-width: @screen-sm) {
+                font-size: 30px;
+              }
+            }
+            .stat-text
+            {
+              .sans-serif();
+              font-weight: bold;
+              line-height: 1.3em;
+              @media screen and (min-width: @screen-sm)
+              {
+                font-size: 24px;
+              }
+              @media screen and (max-width: @screen-sm) {
+                font-size: 18px;
+              }
+            }
+            .caption
+            {
+
+            }
+          }
+          .sub-headline
+          {
+
+          }
+        }
+
+        .stats {
+          padding-left: 32px;
+          @media screen and (max-width: @screen-sm)
+          {
+            padding-left: 0;
+          }
+
+          h2 {
+            margin: 0;
+            font-size: 70px;
+            color: @blue;
+            font-weight: bold;
+            line-height: 1;
+
+            @media screen and (max-width: @screen-sm)
+            {
+              font-size: 40px;
+            }
+          }
+          
+          p {
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+
+          .or {
+            height: 75px;
+            position: relative;
+            display: flex;
+            min-width: 100px;
+
+            @media screen and (max-width: @screen-sm)
+            {
+              height: 40px;
+              min-width: 40px;
+            }
+
+            &:before {
+              content: '';
+              height: 100%;
+              position: absolute;
+              left: 50%;
+              top: 15px;
+              border-left: 1px dotted @blue;
+            }
+
+            p {
+              position: absolute;
+              top: 70%;
+              left: 51%;
+              transform: translate(-50%, -50%);
+              background: @blue;
+              border-radius: 50%;
+              color: @white;
+              width: 34px;
+              height: 34px;
+              text-align: center;
+              font-size: 20px;
+              margin: 0;
+
+              @media screen and (max-width: @screen-sm)
+              {
+                top: 85%;
+                width: 25px;
+                height: 25px;
+                font-size: 15px;
+              }
+
+              em {
+                display: block;
+                padding-top: 5px;
+                @media screen and (max-width: @screen-sm)
+                {
+                  padding-top: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: 1px dotted @gray;
+        @media screen and (min-width: @screen-md)
+        {
+          padding: 20px 50px;
+        }
+        @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+        {
+          padding: 30px 25px 20px 25px;
+          align-items: center;
+        }
+        @media screen and (max-width: @screen-sm)
+        {
+          padding: 50px 25px;
+          border-top: 1px dotted @gray;
+          border-left: none;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 186px;
+          color: @blue;
+          padding: 0;
+          font-weight: bold;
+          font-size: 90px;
+          position: relative;
+
+          @media screen and (max-width: @screen-sm)
+          {
+            font-size: 50px;
+            margin-top: 30px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: @blue;
+          }
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 26px;
+          max-width: 375px;
+          line-height: 1.25;
+        }
+        .impact-items-container
+        {
+          @media screen and (max-width: @screen-sm)
+          {
+            max-width: 375px;
+          }
+          h3.title
+          {
+            font-weight: bold;
+            position: relative;
+            margin-top: 0;
+            display: inline-block;
+            margin-bottom: 15px;
+            line-height: 1.3em;
+            color: @gray;
+            padding-top: 40px;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 60px;
+              height: 4px;
+              background: @gray;
+            }
+            @media screen and (min-width: @screen-sm)
+            {
+              font-size: 28px;
+            }
+            @media screen and (max-width: @screen-sm)
+            {
+              font-size: 18px;
+            }
+          }
+          p {
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 1.5;
+
+            @media screen and (max-width: @screen-sm)
+            {
+              font-size: 16px;
+            }
+          }
+
+          a {
+            text-decoration: underline;
+            font-weight: bold;
+          }
+          .list
+          {
+            margin:0;
+            padding: 0;
+            list-style: none;
+            .item
+            {
+              margin-bottom: 35px;
+              .item-content
+              {
+                img
+                {
+                  float: left;
+                  width: 26px;
+                  height: auto;
+                }
+                .item-info
+                {
+                  height: auto;
+                  border-left: dotted 1px @gray;
+                  margin-left: 26px + 12px;
+                  padding-left: 12px;
+                  .title
+                  {
+                    border: none;
+                    .sans-serif();
+                    margin: 0;
+                    font-weight: bold;
+                    @media screen and (min-width: @screen-sm)
+                    {
+                      padding-top: 0px;
+                      font-size: 24px;
+                    }
+                    @media screen and (max-width: @screen-sm)
+                    {
+                      font-size: 18px;
+                      padding-top: 0px;
+                    }
+                  }
+                  .description
+                  {
+                    a.read-more
+                    {
+                      font-size: 14px;
+                      display: inline-block;
+                      img
+                      {
+                        width: 14px;
+                        height:auto;
+                        float: none;
+                        display: inline;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@import "_impact-global/_index";
+@import "_impact-research/_index";
+@import "_impact-gender/_index";
+@import "_impact-leadership/_index";
+@import "_impact-action/_index";

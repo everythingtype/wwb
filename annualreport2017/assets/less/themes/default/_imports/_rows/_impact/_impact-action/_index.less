@@ -1,0 +1,254 @@
+section.impact#impact-action
+{
+  .impact-hero
+  {
+    img
+    {
+    }
+  }
+  .impact-content
+  {
+    @media screen and (min-width: @screen-sm)
+    {
+    }
+    @media screen and (max-width: @screen-sm)
+    {
+    }
+    .icon-line-wrapper
+    {
+      .icon
+      {
+        img
+        {
+          @media screen and (max-width: @screen-sm)
+          {
+          }
+        }
+
+        .dotted-line
+        {
+          @media screen and (max-width: @screen-sm)
+          {
+          }
+          @media screen and (min-width: @screen-sm)
+          {
+          }
+        }
+      }
+    }
+
+    .content
+    {
+      -webkit-box-shadow: 15px 15px 0px 0px @dark;
+      -moz-box-shadow: 15px 15px 0px 0px @dark;
+      box-shadow: 15px 15px 0px 0px @dark;
+      .left
+      {
+        @media screen and (min-width: @screen-md)
+        {
+        }
+        @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+        {
+        }
+        @media screen and (max-width: @screen-sm)
+        {
+        }
+        h2.title
+        {
+          border-color: @dark;
+          @media screen and (min-width: @screen-md)
+          {
+          }
+          @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+          {
+          }
+          @media screen and (max-width: @screen-sm)
+          {
+          }
+        }
+        .impact-quote {
+          padding: 10px 20px;
+          border-left: 1px dotted @dark;
+
+          h3 {
+            color: @dark;
+            font-weight: bold;
+            margin: 0;
+          }
+        }
+        .left-content
+        {
+          margin: 30px 0 50px;
+          @media screen and (max-width: @screen-sm)
+          {
+          }
+          @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+          {
+          }
+          @media screen and (min-width: @screen-md)
+          {
+          }
+          .stats {
+            margin-top: 30px;
+            padding-left: 0;
+
+            h2 {
+              color: @dark;
+              @media screen and (max-width: @screen-sm)
+              {
+                font-size: 40px;
+              }
+            }
+
+            .or {
+              &:before {
+                border-left: 1px dotted @dark;
+              }
+
+              p {
+                background: @dark;
+                font-size: 14px;
+                width: 45px;
+                height: 45px;
+
+                @media screen and (max-width: @screen-sm)
+                {
+                  font-size: 11px;
+                  width: 30px;
+                  height: 30px;
+                }
+
+                em {
+                  padding-top: 10px;
+                  @media screen and (max-width: @screen-sm)
+                  {
+                    padding-top: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .right
+      {
+        border-color: @dark;
+        @media screen and (min-width: @screen-md)
+        {
+        }
+        @media screen and (min-width: @screen-sm) and (max-width: @screen-md)
+        {
+        }
+        @media screen and (min-width: @screen-sm) {
+        }
+        @media screen and (max-width: @screen-sm)
+        {
+        }
+        .impact-items-container
+        {
+          h3.title
+          {
+            color: @dark;
+
+            &:before {
+              background: @dark;
+            }
+          }
+          .events {
+            list-style: none;
+            padding: 0;
+            
+            li {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              border-bottom: 1px dotted @dark;
+              padding: 25px 0;
+
+              @media screen and (max-width: @screen-xs)
+              {
+                flex-direction: column;
+              }
+
+              &:last-child {
+                border: none;
+              }
+
+              // a {
+              //   &.location {
+              //     p {
+              //       &:hover {
+              //         text-decoration: underline;
+              //       }
+              //     }
+              //   }
+              // }
+
+              div, a {
+                color: @dark;
+
+                &.date {
+                  flex-basis: 15%;
+                  font-size: 16px;
+                  text-align: center;
+                  font-weight: bold;
+                  padding-right: 10px;
+
+                  @media only screen and (max-width: @screen-lg) {
+                    flex-basis: 20%;
+                  }
+
+                  @media only screen and (max-width: @screen-md) {
+                    flex-basis: 22%;
+                  }
+
+                  @media only screen and (max-width: @screen-xs) {
+                    padding-bottom: 10px;
+                    padding-right: 0;
+                    br {
+                      display: none;
+                    }
+                  }
+                }
+
+                &.title {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  flex-basis: 43%;
+                  font-size: 16px;
+                  border-left: 2px solid @dark;
+
+                  @media only screen and (max-width: @screen-xs) {
+                    text-align: center;
+                    border-left: none;
+                    border-top: 2px solid @dark;
+                    padding: 10px 0;
+                    margin: 0 20px 10px;
+                  }
+                }
+
+                &.location {
+                  flex-basis: 37%;
+                  text-align: right;
+                  p, a {
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 100;
+                    display: inline-block;
+                    width: auto;
+                    padding: 10px;
+                    border: 2px solid @dark;
+                    font-size: 16px;
+                    @media only screen and (max-width: @screen-md) {
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

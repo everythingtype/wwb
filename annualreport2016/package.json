@@ -1,0 +1,44 @@
+{
+  "name": "wm-wwb1701-digital-annual-report",
+  "version": "1.0.0",
+  "description": "An html site for an EOY report.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "3.*",
+    "font-awesome": "^4.7.0",
+    "html5shiv": "^3.7.3",
+    "jasny-bootstrap": "^3.1.3",
+    "jquery": "^1.9.1",
+    "jquery.localscroll": "^1.4.0",
+    "jquery.scrollto": "^2.1.2",
+    "leaflet": "^1.0.3",
+    "lesshat": "^4.1.0",
+    "respond.js": "^1.4.2",
+    "smartmenus": "^1.0.1",
+    "smartmenus-bootstrap": "^0.3.1",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-webpack": "^3.0.0",
+    "jit-grunt": "^0.9.1",
+    "webpack": "^2.6.1",
+    "matchdep": "~0.1.2",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "style-loader": "^0.13.1"
+  }
+}

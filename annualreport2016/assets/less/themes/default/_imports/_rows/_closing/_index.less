@@ -1,0 +1,131 @@
+#closing
+{
+
+  //background-image: url("/assets/images/2_opening/opening-bg-image.jpg");
+  background-repeat: repeat;
+  position: relative;
+  .italic
+  {
+    font-size: 22px;
+    .serif();
+    font-style: italic;
+  }
+  .bg-overlay
+  {
+    z-index: 0;
+    background-color: @gray;
+    //.opacity(.95);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+  }
+  .dotted-line
+  {
+    border-left: dotted @white 1px;
+    margin: 0 auto;
+    width: 1px;
+    height: 50px;
+  }
+  .row-1
+  {
+
+  }
+  .row-2
+  {
+    img
+    {
+      width: 54px;
+      height: auto;
+      text-align: center;
+    }
+  }
+  .letter
+  {
+    margin-top: 20px;
+    .letter-intro
+    {
+      border-left: 1px solid @white;
+      @media screen and (min-width: @screen-sm)
+      {
+        padding: 10px 30px;
+        font-size: 30px;
+      }
+      @media screen and (min-width: @screen-xs) and (max-width: @screen-sm)
+      {
+        font-size: 26px;
+        padding: 10px 30px;
+      }
+      @media screen and (max-width: @screen-xs)
+      {
+        font-size: 22px;
+        padding: 10px 20px;
+      }
+      p
+      {
+        .serif();
+        line-height: 1.3em;
+        color: @white;
+      }
+      //font: @serif, @white, line-height: 1.3em
+    }
+    .letter-body
+    {
+      line-height: 1.6em;
+      color:@white;
+      h2
+      {
+        color: @white;
+      }
+      @media screen and (min-width: @screen-xs)
+      {
+        padding: 30px;
+      }
+      @media screen and (max-width: @screen-xs)
+      {
+        padding: 20px;
+      }
+      .signature
+      {
+        margin-top: 40px;
+        width: 187px;
+        height: auto;
+        max-width: 100%;
+      }
+      .name-print
+      {
+        .sans-serif();
+        font-weight: bold;
+        color: @white;
+        font-size: 18px;
+        @media screen and (max-width: @screen-sm)
+        {
+          padding: 14px;
+        }
+      }
+    }
+  }
+  .row-3
+  {
+    .letter
+    {
+      .letter-body
+      {
+        //padding-bottom: 0;
+      }
+    }
+  }
+  .row-4
+  {
+    .letter
+    {
+      border-bottom: solid 1px @white;
+      .letter-body
+      {
+        padding-top: 0;
+      }
+    }
+  }
+  @import "_points";
+}

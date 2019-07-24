@@ -1,0 +1,150 @@
+#research-insurance
+{
+  .container
+  {
+    .background
+    {
+      margin-bottom: 30px;
+      padding-top: 26px;
+      padding-bottom: 40px;
+      background-color: @orange;
+    }
+  }
+  .left
+  {
+    .title
+    {
+      margin-top: 0;
+      margin-bottom: 25px;
+      border-top: solid 2px @white;
+      color:@white;
+      .serif();
+      @media screen and (max-width: @screen-sm)
+      {
+        padding-top: 10px;
+      }
+      @media screen and (min-width: @screen-sm)
+      {
+        display: inline-block;
+        padding-top: 26px;
+      }
+    }
+  }
+  .right
+  {
+    .col-circle
+    {
+      color:@white;
+      padding: 0;
+      position: relative;
+      @media screen and (max-width: @screen-md) {
+        margin-bottom: 30px;
+        &:last-child
+        {
+          margin-bottom: 0;
+        }
+      }
+      @media screen and (min-width: 440px) and (max-width: @screen-sm) {
+        width: 180px;
+        float: left;
+        &:nth-child(3) {
+          clear: left;
+        }
+      }
+      .dotted-line
+      {
+        width: 100%;
+        border-top:dotted 1px @white;
+        height: 1px;
+        position: absolute;
+        top:50%;
+        left:0;
+        @media screen and (max-width: @screen-md) {
+          display: none;
+        }
+      }
+      .circle
+      {
+        background-color: @orange;
+        border: dotted 1px @white;
+        .border-radius(100%);
+        width: 161px;
+        height: 161px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        @media screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+          //width: 125px;
+          //height: 125px;
+        }
+
+        @media screen and (max-width: @screen-md) {
+          margin: 0 auto;
+        }
+        &:hover
+        {
+          .circle-content
+          {
+            .overlay
+            {
+              .opacity(1);
+            }
+          }
+        }
+        .circle-content
+        {
+          .front-content
+          {
+            position: absolute;
+            bottom:21px;
+            left: 0;
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 14px;
+            .text
+            {
+              margin-bottom: 15px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .image
+            {
+              img
+              {
+                width: 34px;
+                height: auto;
+              }
+            }
+          }
+          .overlay
+          {
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+            cursor: default;
+            .opacity(0);
+            position: absolute;
+            background-color: #a35207;
+            border: 1px solid #a35207;
+            color:@white;
+            top:0;
+            width: 161px;
+            height: 161px;
+            padding-top: 28%;
+            padding-left: 5.5%;
+            padding-right: 5.5%;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 1.3em;
+            @media screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+              //font-size: 12px;
+              //width: 125px;
+              //height: 125px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

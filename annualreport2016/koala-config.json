@@ -1,0 +1,79 @@
+// Default project settings, you can edit it and set custom settings.
+{
+	// The mappings of source directory and output directory
+	"mappings": [
+		{
+			"src": "assets/less",
+			"dest": "assets/css"
+		}
+	],
+
+	// Add the ignore rules that Koala will not search them.
+	// e.g. ["*.json", "*.txt", "test", "path/libs"]
+	"ignores": ["*.json"
+        ,"*.ico"
+        ,"*.js"
+        ,"*.md"
+        ,"*.png"
+        ,"*.jpg"
+        ,"*.jshintrc"
+        ,"*.yml"
+        ,"*.twing"
+        ,"*.svg"
+        ,"*yml"
+        ,"bootstrap"
+        ,"config"
+        ,"css"
+        ,"fonts"
+        ,"images"
+        ,"includes"
+        ,"js"
+        ,"node_modules"
+        ,"templates"
+        ,"bower_components"
+        ,"bower_components/fullpage.js"
+        ,"bower_components/html5shiv"
+        ,"bower_components/jquery"
+        ,"bower_components/jquery.localScroll"
+        ,"bower_components/jquery.scrollTo"
+        ,"bower_components/respond"
+        ,"bower_components/dist"
+        ,"bower_components/fonts"
+        ,"bower_components/grunt"
+        ,"bower_components/js"
+        ,"bower_components/nuget"
+        ,"bower_components/jasny-bootstrap/less"
+        ,"bower_components/jasny-bootstrap/dist"
+        ,"bower_components/jasny-bootstrap/grunt"
+        ,"bower_components/jasny-bootstrap/js"
+        ,"bower_components/jasny-bootstrap/scss"
+        ,"bower_components/jasny-bootstrap/test-infra"
+        ,"less/component"
+        ,"less/jquery-ui"
+        ,"wm_bootstrap"
+        ,"ignore"
+    ]
+    ,
+    //thanks: https://github.com/reinos/Bootstrap-Template/blob/master/koala-config.json
+	// Options of Compilers.
+	"options": {
+	// Output style. Can be normal (default), compress.
+      "outputStyle": "normal",
+
+      // Outputs filename and line numbers, which will output the debug info within comments.
+      "lineComments": true,
+
+      // Outputs filename and line numbers, which will output the information within a fake media query which is compatible with the SASS format.
+      "debugInfo": false,
+
+      "strictMath": false,
+
+      "strictUnits": false,
+
+      "sourceMap": false
+
+	},
+
+	// An array of filesystem paths which should be searched for js/LESS/Sass templates imported with the @import/@append/@prepend directive.
+	"includePaths": []
+}

@@ -1,0 +1,42 @@
+#more
+{
+  padding-top: 0;
+  background-color: @dark-blue;
+  @media screen and (max-width: @screen-md)
+  {
+    padding-top: 50px;
+  }
+  .more-content-wrapper
+  {
+    @media screen and (min-width: @screen-sm)
+    {
+      padding-left: 10px;
+    }
+  }
+  .arrow-text,.arrow-text a
+  {
+    text-decoration: none;
+    color:@white;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    img
+    {
+      width: 52px;
+      height: auto;
+      display: inline;
+      margin-left: 12px;
+      @media screen and (max-width: @screen-sm)
+      {
+        margin-left: 12px;
+      }
+    }
+
+  }
+  .dotted-line
+  {
+    border-right: dotted @white 1px;
+    width: 75px;
+    height: 60px;
+  }
+}

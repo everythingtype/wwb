@@ -1,0 +1,39 @@
+#more
+{
+  background-color: @blue-3;
+  padding-top: 46px;
+  .more-content-wrapper
+  {
+    @media screen and (min-width: @screen-sm)
+    {
+      padding-left: 10px;
+    }
+  }
+  .arrow-text,.arrow-text a
+  {
+    text-decoration: none;
+    color:@white;
+    .serif();
+    font-size: 14px;
+    font-style: italic;
+    @media screen and (min-width: @screen-sm)
+    {
+      font-size: 16px;
+    }
+    img
+    {
+      width: 61px;
+      height: auto;
+      display: inline;
+      margin-right: 12px;
+    }
+
+  }
+  .dotted-line
+  {
+    margin-top: 5px;
+    border-right: dotted @white 1px;
+    width: 61px/2;
+    height: 60px;
+  }
+}

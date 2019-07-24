@@ -1,0 +1,59 @@
+/**
+=================================================
+Bootstrap base files
+=================================================
+*/
+// Bootstrap library.
+@import '_bootstrap';
+// Base-theme overrides.
+// any bootstrap core overrides can be done here:
+@import '_overrides';
+
+
+/**
+=================================================
+Any bootstrap themes
+=================================================
+*/
+// example: download from source like: http://bootswatch.com/
+// in sub-folder of "themes"
+// import all less files in poper oder
+//@import "themes/flatly/theme";
+
+/**
+=================================================
+Plugins for  things like menus:
+=================================================
+*/
+@import '../../../../node_modules/smartmenus/dist/addons/bootstrap/jquery.smartmenus.bootstrap.css';
+@import '../../../../node_modules/jasny-bootstrap/less/jasny-bootstrap';
+//@import '../../../../node_modules/jQuery.mmenu/dist/css/jquery.mmenu.all.css';
+
+
+/**
+=================================================
+Additional external css
+=================================================
+*/
+@import "../../../../node_modules/font-awesome/less/font-awesome";
+@import "../../../../node_modules/animate.css/animate.min.css";
+@import "../../../../node_modules/leaflet/dist/leaflet.css";
+@import "../../../../node_modules/rrose/dist/leaflet.rrose.css";
+
+/**
+=================================================
+Needed files for all themes
+=================================================
+*/
+//@import '../_import_for_all_themes/_overrides';
+
+
+/**
+=================================================
+Custom Files
+=================================================
+*/
+@import "../../../../node_modules/lesshat/lesshat";
+@import "_imports/_vars/_index";
+@import "_imports/_general/_index";
+@import "_imports/_rows/_index";

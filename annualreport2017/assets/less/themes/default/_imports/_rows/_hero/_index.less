@@ -1,0 +1,99 @@
+#hero
+{
+  background-color: @blue;
+  z-index: 100;
+  height: calc(~"100vh - 70px");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  .row-content
+  {
+    padding-bottom: 80px;
+    .hero-text {
+      h1 {
+        margin-left: 30px;
+        text-align: left;
+        max-width: 1200px;
+        width: 100%;
+        z-index: 120;
+        position: relative;
+        animation-duration: 1s;
+        margin-top: 3%;
+        font-style: italic;
+        padding: 50px 30px;
+        
+        @media screen and (max-width: @screen-sm) {
+          padding: 20px 20px;
+        }
+      }
+    }
+  }
+  .row.scroll
+  {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 120;
+    @media screen and (max-width: @screen-sm) {
+      bottom: 20px;
+    }
+    .scroll-items
+    {
+      animation-delay: 1s;
+      animation-duration: 1s; 
+      a
+      {
+        text-decoration: none;
+        color: @white;
+        display: block;
+        float: left;
+        margin-left: 21px;
+        @media screen and (max-width: @screen-sm) {
+          margin-left: 24px;
+        }
+      }
+      .circle
+      {
+        background-color: @white;
+        .border-radius(50px);
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s; 
+        @media screen and (max-width: @screen-sm) {
+          width: 30px;
+          height: 30px;
+        }
+        img
+        {
+          width: 18px;
+          height: 30px;
+          margin-top: 9px;
+          @media screen and (max-width: @screen-sm) {
+            width: 8px;
+            height: 13px;
+            margin-top: 4px;
+          }
+        }
+      }
+      .text
+      {
+        display: block;
+        float: left;
+        .sans-serif();
+        font-size: 16px;
+        line-height: 50px;
+        font-style: italic;
+        color: @white;
+        margin-left: 10px;
+        @media screen and (max-width: @screen-sm) {
+          font-size: 12px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

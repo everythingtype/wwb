@@ -1,0 +1,184 @@
+.accordion-container
+{
+  .panel-group
+  {
+    padding: 0;
+    margin: 0;
+    .panel
+    {
+      border: none;
+      .panel-collapse.main-panel-content {
+        .panel-body {
+          .inner-panel {
+            .inner-panel-panel
+            {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .panel-heading
+      {
+        background-color: @gray;
+        border: 0;
+        border-top: 1px dotted @white;
+        padding: 0;
+        border-radius: 0;
+        .panel-title
+        {
+          width: 100%;
+          display: inline-block;
+          a
+          {
+            @media screen and (min-width: @screen-sm)
+            {
+              padding: 30px;
+            }
+            @media screen and (max-width: @screen-sm)
+            {
+              padding: 20px;
+            }
+            width: 100%;
+            display: inline-block;
+            color: @white;
+            .serif();
+            line-height: 1.2em;
+            text-decoration: none;
+            &:focus, &:active {
+              outline: none;
+            }
+            @media screen and (min-width: @screen-md) {
+              font-size: 40px;
+            }
+            @media screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+              font-size: 34px;
+            }
+            @media screen and (min-width: @screen-xs) and (max-width: @screen-sm) {
+              font-size: 26px;
+            }
+            @media screen and (max-width: @screen-xs) {
+              font-size: 22px;
+            }
+            img
+            {
+              width: 50px;
+              height: 50px;
+              &.opened
+              {
+                display: none;
+              }
+              &.closed
+              {
+                display: inline;
+              }
+            }
+            &[aria-expanded='true']
+            {
+              background-color: @royal-blue;
+              img.closed
+              {
+                display: none;
+              }
+              img.opened
+              {
+                display: inline;
+              }
+            }
+            &[aria-expanded='false']
+            {
+              img.closed
+              {
+                display: inline;
+              }
+              img.opened
+              {
+                display: none;
+              }
+            }
+            &.collapsed
+            {
+              img.closed
+              {
+                display: inline;
+              }
+              img.opened
+              {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .panel-collapse.main-panel-content
+      {
+        background-color: @lightest-gray;
+        .panel-body
+        {
+          padding: 0;
+          //Inner Panel
+          .inner-panel
+          {
+            .inner-panel-panel
+            {
+              background-color: transparent;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              @media screen and (min-width: @screen-sm) {
+                margin-top: 30px;
+                margin-bottom: 30px;
+              }
+            }
+          }
+        //  END: INNER PANEL
+        }
+      }
+    }
+  }
+}
+
+// TAB BUTTONS 
+
+.btns {
+  .btn-row {
+    .btn {
+      .border-radius(20px);
+        font-weight: bold;
+        line-height: 1em;
+        padding: 8px 17px;
+        font-size: 16px;
+        margin-bottom: 20px;
+          @media screen and (max-width: @screen-sm) {
+            font-size: 13px;
+            padding: 6px 12px;
+            margin-bottom: 15px;
+          }
+          &.btn-solid {
+            background-color: @blue;
+            color: @white;
+          }
+          &.btn-dotted {
+            color: @blue;
+            border: 1px solid @gray-b;
+            background-color: transparent;
+            &:hover,&:active {
+              background-color: @blue;
+              border: 1px solid @blue;
+              color: @white;
+            }
+          }
+          &[aria-expanded='true'] {
+            background-color: @blue!important;
+            border: 1px solid @blue!important;
+            color: @white!important;
+            outline: none !important;
+          }
+          &:focus, &:active {
+            outline: none;
+          }
+        }
+      }
+    }
+
+@import "_financials/_index";
+@import "_governance/_index";
+@import "_supporters/_index";

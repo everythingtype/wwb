@@ -1,0 +1,1650 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"rawurl",
+				"rawurlencode"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"font-s",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 32022,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 11430,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// set height and width to native values\nfunction naturalSize(myVideo) {\n  //var myVideo = document.getElementById('theVideo');\n  var myContent = $('body').get(0);\n  myVideo.height = myVideo.videoHeight;\n  myVideo.width = myVideo.videoWidth;\n\n  //if the video is bigger than the container it'll fit\n  var ratio = myVideo.videoWidth/myVideo.videoHeight;\n  if(parseInt(myContent.offsetWidth,10)<myVideo.videoWidth){\n   myVideo.height = myVideo.videoHeight*parseInt(myContent.offsetWidth,10)/myVideo.videoWidth;\n     myVideo.width=parseInt(myContent.offsetWidth,10); \n  }\n}\n// register listener function on metadata load\nfunction iOSVideoInit(){\n  if (Modernizr.appleios) {\n    $('video').each(function(){\n      var myVideo = $(this).get(0);\n      myVideo.addEventListener('loadedmetadata', naturalSize(myVideo), false);\n    });\n  }\n}\n\nwindow.onload = iOSVideoInit();",
+			"settings":
+			{
+				"buffer_size": 864,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 17065,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/_banner.scss",
+			"settings":
+			{
+				"buffer_size": 7889,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"xdebu",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"start",
+				"Xdebug: Restart Session"
+			],
+			[
+				"step",
+				"Xdebug: Breakpoint - Step Out"
+			],
+			[
+				"settings",
+				"Preferences: Xdebug Settings – User"
+			],
+			[
+				"stop",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"xdebug",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"xd",
+				"Xdebug: Breakpoint - Step Over"
+			],
+			[
+				"pertty",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"sett",
+				"Preferences: Settings - Default"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"dock",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"javas",
+				"Format: Javascript"
+			],
+			[
+				"comment",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"htm",
+				"HTMLPrettify"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			],
+			[
+				"pakc",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/zane/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/zane/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/node_modules/grunt-contrib-clean/docs/clean-options.md",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/app/calendar.html",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/.jshintrc",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/app/styles/_normalize.scss",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/Gruntfile.js",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/app/styles/_carousel.scss",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/app/scripts/script.js",
+		"/Users/zane/Projects/Clients/Total Design Shop/SW Bible/resp-mockup/app/scripts/jquery.bgiframe.js",
+		"/Users/zane/Projects/Clients/Seven25/WWB Micro/web/app/bower_components/modernizr/feature-detects/quota-management-api.js",
+		"/Users/zane/Projects/Clients/Seven25/WWB Micro/web/app/scripts/main.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/classes/model/core/user.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-mocha/node_modules/mocha/node_modules/mkdirp/test/umask_sync.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/image/upload.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-imagemin/node_modules/.bin/jpegtran",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/mailing/new-film.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/jshint-stylish/node_modules/text-table/example/align.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/.sass-cache/28562367a793f06029ee924a261d05621e17dd8f/main.scssc",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-autoprefixer/LICENSE-MIT",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/equipment/index.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/views/s25/users/index.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/.sass-cache/30c323362be60345bc23c4ac8f18fb1ef9fe7ee6/_user-interface.scssc",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/s25/equipment.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/test/index.html",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-modernizr/node_modules/uglify-js/test/unit/compress/expected/if-not.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/equipment.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/classes/model.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-modernizr/modernizr.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/modals.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/equipment/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/views/s25/pages/blocks/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/upload.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/s25/uploads.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/main.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/xhprof/LICENSE",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/connect/confirm-ad.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/cineworks.sublime-project",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/s25/programmes.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/classes/model/block.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/jquery.BlackAndWhite/jquery.BlackAndWhite.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/bootstrap.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/jqueryui-timepicker-addon/src/docs/formatting.html",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/jquery-ui/ui/i18n/jquery.ui.datepicker-fo.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/test/bower_components/chai/karma.conf.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/block.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/OwlCarousel/assets/js/bootstrap-collapse.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/uploads/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/classes/controller/s25/pages/blocks.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/compress/blocks.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/classes/model/user.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-connect/node_modules/open/vendor/xdg-open",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/utf8/ord.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/OwlCarousel/demos/json/data.json",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/OwlCarousel/demos/lazyLoad.html",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-imagemin/node_modules/optipng-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/tar/lib/entry.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cms/stylesheets/styles.css",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/cart.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/connect/_join_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/cineworks/connect.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/thumbs.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/programmes/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/setting.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/views/s25/pages/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/blocks/row.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-mocha/node_modules/grunt-lib-phantomjs/node_modules/phantomjs/lib/phantom/examples/pagecallback.coffee",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/s25/classes/model/page.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/pagination/classes/pagination.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/package.json",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/uploads/upload-533c6ab5989f4.docx",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/forms.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/classes/feed.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/_cart.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/s25/films.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/film.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/cineworks/router.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/robots.txt",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-autoprefixer/node_modules/autoprefixer/lib/autoprefixer/keyframes.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/classes/kohana.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/.bin/autoprefixer",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/attend/_programmes.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/attend/_programme-details.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt/node_modules/glob/test/pause-resume.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-watch/node_modules/gaze/test/safewrite_test.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/jshint-stylish/stylish.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/films/index.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/modernizr/feature-detects/forms-inputnumber-l10n.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/equipment/edit.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/see/_films.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/uploads/index.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/jquery-ui/ui/jquery.ui.accordion.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action_container.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/config/credit_cards.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/cmf/classes/controller/cmf/actionpack.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/s25/films/_form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/cineworks/see.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/category.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/category/type.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-autoprefixer/node_modules/autoprefixer/lib/autoprefixer/declaration.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/ad/character.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-imagemin/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/mout/string/escapeRegExp.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/cache/classes/cache/garbagecollect.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt/node_modules/findup-sync/LICENSE-MIT",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/modernizr/feature-detects/dom-createElement-attrs.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-modernizr/node_modules/uglify-js/test/unit/compress/test/strict-equals.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-usemin/lib/config/requirejs.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/load-grunt-tasks/node_modules/globule/test/fixtures/expand/css/qux.css",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/model/film/field.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/kohana/exception.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/connect.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt/CONTRIBUTING.md",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-clean/docs/clean-options.md",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/.sass-cache/fe8b1400bc35f842d7251f9f89bc24ac1cbbcb2a/_forms.scssc",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/.sass-cache/bf364acc385f3a57237674b0773d447d514f0cfc/_forms.scssc",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/tests/kohana/FormTest.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/classes/kohana/form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/system/classes/form.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/make.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/styles/_resp-large.scss",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/Gruntfile.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/assets/cineworks/scripts/load.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views/cineworks/pages/home.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/classes/controller/cineworks/home.php",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/omap.js",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules/orm/guide/orm/menu.md",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/node_modules/grunt-contrib-htmlmin/docs/htmlmin-overview.md",
+		"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/bower_components/imagesloaded/imagesloaded.js"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 137.0,
+		"where_history":
+		[
+			"",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/public/scripts",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views",
+			"/app/application/views/*",
+			"/app/application/views/",
+			"",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/application/views",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/",
+			"/Users/zane/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/app/modules",
+			"",
+			"/Users/zane/Projects/Clients/Total Design Shop/Mortgage Express/mortgage-express-f5/bower_components/foundation/scss",
+			"",
+			"/Users/zane/Projects/Clients/Total Design Shop/Mortgage Express/mortgage-express-f5/assets/scss",
+			"",
+			" rem(",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"p {",
+			"in order to understand",
+			"p ",
+			"img",
+			"video",
+			",",
+			"video",
+			"img",
+			".caption-wrap",
+			"p",
+			"footer",
+			"seek",
+			"30%",
+			"3em",
+			"caption",
+			"active",
+			".webmhd",
+			".logo",
+			".title",
+			".titles",
+			"font-size",
+			".title",
+			"font-weight",
+			"RenderComp",
+			"currenttime",
+			"<video",
+			" class=\"active\"",
+			" class=\"active",
+			"class=\"active",
+			"function ()",
+			"total",
+			".load()",
+			"<video",
+			"slide",
+			"http",
+			"togglebg",
+			"landingHm",
+			".footer",
+			"compass",
+			"nav-global",
+			"nav-",
+			"http://206.72.101.234/",
+			"_Master",
+			"14WWB_",
+			"normalized",
+			"embedprovider",
+			"embed",
+			"clearfix",
+			"datepicker",
+			".thumb",
+			"imagesloaded",
+			"initthumbs",
+			"onload",
+			"input[name=\"order[date_pickup]\"",
+			"e8e8",
+			"deleted",
+			"responder",
+			"resource",
+			".embed",
+			"catch",
+			"try",
+			"datetime",
+			"datetime_submitted",
+			"datetime",
+			"strto",
+			"_ad",
+			"submitte",
+			"URL::site(''",
+			"URL::base(NULL",
+			"URL::base('/'",
+			"URL::site('/'",
+			"URL::site",
+			"cart",
+			"cart_data",
+			"cart_date",
+			"cart",
+			"grid-item",
+			"yepnope",
+			"datepicker",
+			"date",
+			"datepicker",
+			"date",
+			"datepicker",
+			"\"date\"",
+			"base",
+			"ol ",
+			"ol",
+			"get_thumb_filename",
+			"equip-list",
+			"destroy",
+			"reset",
+			"join",
+			"h4",
+			"h5",
+			"category_id",
+			".title",
+			"notice",
+			"account_notice",
+			"session",
+			"form_posted",
+			"mandrill",
+			"modal",
+			".errors",
+			"h1",
+			"img",
+			"load",
+			"onimageready",
+			"h5",
+			"fadein",
+			"sidebar",
+			"footer",
+			"sidebar",
+			"fieldset",
+			"ul",
+			"$total",
+			"cart",
+			".active",
+			"logout",
+			"/sponsors",
+			"pre-join",
+			"initjcrop",
+			"389x270",
+			"heading",
+			"accordion",
+			"join",
+			"confirm",
+			"width",
+			"svg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<video controls",
+			"",
+			"function()",
+			"<video preload=\"auto\"",
+			"",
+			"_Rendercomp_Master_v2",
+			"",
+			"h3",
+			"h4",
+			"",
+			"see",
+			"",
+			",",
+			"arti",
+			"",
+			"'], array('placeholde",
+			"$post['",
+			"",
+			"member",
+			"person",
+			"people",
+			"person",
+			"people",
+			">person",
+			"person",
+			"Person",
+			"category_type",
+			"category",
+			"categories",
+			"category[",
+			">category",
+			"loaded",
+			"Category",
+			"category",
+			"categories",
+			"programme",
+			"Film",
+			"film",
+			"facility",
+			"Facility",
+			"Programme",
+			"programme",
+			"Equipment",
+			"equipment",
+			"Ad",
+			"Ads",
+			"ad",
+			"programme",
+			"event",
+			"programme",
+			"Make",
+			"Equipment",
+			"equipment",
+			"facility",
+			"facilities",
+			"facility",
+			"facilities",
+			"Facility",
+			"facility",
+			"facilities",
+			"link",
+			"resource_link",
+			"resource",
+			"Resources",
+			"resource",
+			"programme",
+			"Programme",
+			"event",
+			"Event",
+			"event",
+			"Events",
+			"catalogue",
+			"Catalogue",
+			"catalogue",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"Articles",
+			"film",
+			"Film",
+			"$primary-color",
+			"rem-calc",
+			"'",
+			"images",
+			"Product",
+			"h5",
+			" rem(",
+			"$grey4",
+			"rem;",
+			"blue",
+			"\"",
+			"team",
+			"portfolio",
+			"blog"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25481,
+								25481
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"SideBarAutoAddFoldersForOpenedFiles": 1,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"syntax": "Packages/Enhanced HTML and CFML/EnhancedHTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10510.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8431,
+								8431
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"SideBarAutoAddFoldersForOpenedFiles": 1,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5734.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								864,
+								864
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11940,
+								11943
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"SideBarAutoAddFoldersForOpenedFiles": 1,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8952.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "styles/_banner.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7889,
+								7889
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 7210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 164.0
+	},
+	"project": "wwb-micro.sublime-project",
+	"replace":
+	{
+		"height": 88.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"connec",
+				"app/connect.html"
+			],
+			[
+				"main",
+				"scripts/main.js"
+			],
+			[
+				"userform",
+				"app/modules/s25/views/s25/users/_form.php"
+			],
+			[
+				"joinform",
+				"app/application/views/cineworks/pages/connect/_join_form.php"
+			],
+			[
+				"mailnew",
+				"app/application/views/mailing/new-wanted-ad.php"
+			],
+			[
+				"mailmember",
+				"app/application/views/mailing/new-member-application.php"
+			],
+			[
+				"userindex",
+				"app/modules/s25/views/s25/users/index.php"
+			],
+			[
+				"equipmindex",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"make",
+				"app/application/views/cineworks/pages/make.php"
+			],
+			[
+				"modeleqiup",
+				"app/application/classes/model/equipment.php"
+			],
+			[
+				"equipmenindex",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"equipindex",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"equipment",
+				"app/application/classes/controller/s25/equipment.php"
+			],
+			[
+				"layout",
+				"app/application/views/cineworks/layout.php"
+			],
+			[
+				"cart",
+				"app/application/views/cineworks/_cart.php"
+			],
+			[
+				"blockform",
+				"app/modules/s25/views/s25/pages/blocks/_form.php"
+			],
+			[
+				"uploadform",
+				"app/application/views/s25/uploads/_form.php"
+			],
+			[
+				"blocks",
+				"app/modules/s25/classes/controller/s25/core/pages/blocks.php"
+			],
+			[
+				"modelupload",
+				"app/application/classes/model/upload.php"
+			],
+			[
+				"uploads",
+				"app/application/classes/controller/s25/uploads.php"
+			],
+			[
+				"pageform",
+				"app/modules/s25/views/s25/pages/_form.php"
+			],
+			[
+				"equipmentform",
+				"app/application/views/s25/equipment/_form.php"
+			],
+			[
+				"row",
+				"app/application/views/cineworks/blocks/row.php"
+			],
+			[
+				"programmeform",
+				"app/application/views/s25/programmes/_form.php"
+			],
+			[
+				"programm",
+				"app/application/classes/controller/s25/programmes.php"
+			],
+			[
+				"modelfilm",
+				"app/application/classes/model/film.php"
+			],
+			[
+				"modelequip",
+				"app/application/classes/model/equipment.php"
+			],
+			[
+				"boot",
+				"app/application/bootstrap.php"
+			],
+			[
+				"styles",
+				"app/public/assets/cms/stylesheets/styles.css"
+			],
+			[
+				"filmindex",
+				"app/application/views/s25/films/index.php"
+			],
+			[
+				"equipmentindex",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"equip",
+				"app/application/classes/controller/s25/equipment.php"
+			],
+			[
+				"films",
+				"app/application/classes/controller/s25/films.php"
+			],
+			[
+				"modelcte",
+				"app/application/classes/model/category.php"
+			],
+			[
+				"filminde",
+				"app/application/views/s25/films/index.php"
+			],
+			[
+				"see",
+				"app/application/classes/controller/cineworks/see.php"
+			],
+			[
+				"join",
+				"app/application/views/cineworks/pages/connect/_join_form.php"
+			],
+			[
+				"form",
+				"app/public/assets/cineworks/scripts/forms.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"layou",
+				"app/application/views/cineworks/layout.php"
+			],
+			[
+				"main.scss",
+				"app/public/assets/cineworks/styles/main.scss"
+			],
+			[
+				"home",
+				"app/application/views/cineworks/pages/home.php"
+			],
+			[
+				"hoem",
+				"app/application/classes/controller/cineworks/home.php"
+			],
+			[
+				"black",
+				"app/public/bower_components/jquery.BlackAndWhite/jquery.BlackAndWhite.js"
+			],
+			[
+				"uploadind",
+				"app/application/views/s25/uploads/index.php"
+			],
+			[
+				"equipminde",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"action",
+				"app/modules/cmf/classes/controller/cmf/actionpack.php"
+			],
+			[
+				"upload",
+				"app/application/classes/controller/s25/uploads.php"
+			],
+			[
+				"actionpa",
+				"app/modules/cmf/classes/controller/cmf/actionpack.php"
+			],
+			[
+				"router",
+				"app/application/classes/controller/cineworks/router.php"
+			],
+			[
+				"imageupload",
+				"app/application/classes/image/upload.php"
+			],
+			[
+				"bootstrap",
+				"app/application/bootstrap.php"
+			],
+			[
+				"excep",
+				"app/application/classes/kohana/exception.php"
+			],
+			[
+				"filmform",
+				"app/application/views/s25/films/_form.php"
+			],
+			[
+				"film",
+				"app/application/classes/controller/s25/films.php"
+			],
+			[
+				"modelequipment",
+				"app/application/classes/model/equipment.php"
+			],
+			[
+				"equipmentinde",
+				"app/application/views/s25/equipment/index.php"
+			],
+			[
+				"main.js",
+				"app/public/assets/cineworks/scripts/main.js"
+			],
+			[
+				"details",
+				"app/application/views/cineworks/pages/see/_film-details.php"
+			],
+			[
+				"new-fi",
+				"app/application/views/mailing/new-film.php"
+			],
+			[
+				"new-",
+				"app/application/views/mailing/new-wanted-ad.php"
+			],
+			[
+				"modelad",
+				"app/application/classes/model/ad.php"
+			],
+			[
+				"ads",
+				"app/application/classes/controller/s25/ads.php"
+			],
+			[
+				"adsform",
+				"app/application/views/s25/ads/_form.php"
+			],
+			[
+				"adform",
+				"node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/help/added_formatters.js"
+			],
+			[
+				"fimls",
+				"app/application/classes/controller/s25/films.php"
+			],
+			[
+				"new-fil",
+				"app/application/views/mailing/new-film.php"
+			],
+			[
+				"new-ren",
+				"app/application/views/mailing/new-rental-order.php"
+			],
+			[
+				"share",
+				"app/application/views/cineworks/pages/attend/_share.php"
+			],
+			[
+				"confirm",
+				"app/application/views/cineworks/pages/connect/confirm-film.php"
+			],
+			[
+				"member_forms",
+				"app/application/views/cineworks/pages/connect/_member_forms.php"
+			],
+			[
+				"connect",
+				"app/application/views/cineworks/pages/connect.php"
+			],
+			[
+				"new",
+				"app/application/views/mailing/new-film.php"
+			],
+			[
+				"film-detail",
+				"app/application/views/cineworks/pages/see/_film-details.php"
+			],
+			[
+				"datepicker",
+				"app/public/assets/cineworks/styles/_datepicker.scss"
+			],
+			[
+				"member_",
+				"app/application/views/cineworks/pages/connect/_member_forms.php"
+			],
+			[
+				"forms",
+				"app/public/assets/cineworks/scripts/forms.js"
+			],
+			[
+				"ayout",
+				"app/modules/s25/views/s25/layout.php"
+			],
+			[
+				"laoyut",
+				"app/application/views/cineworks/layout.php"
+			],
+			[
+				"bits",
+				"app/public/assets/cineworks/styles/_bits.scss"
+			],
+			[
+				"modals",
+				"app/public/assets/cineworks/scripts/modals.js"
+			],
+			[
+				"grid",
+				"app/public/assets/cineworks/styles/_grid-settings.scss"
+			],
+			[
+				"_artc",
+				"app/application/views/cineworks/pages/see/_articles.php"
+			],
+			[
+				"_films",
+				"app/application/views/cineworks/pages/see/_films.php"
+			],
+			[
+				"_program",
+				"app/application/views/cineworks/pages/attend/_programmes.php"
+			],
+			[
+				"events",
+				"app/application/views/cineworks/pages/attend/_events.php"
+			],
+			[
+				"atten",
+				"app/application/classes/controller/cineworks/attend.php"
+			],
+			[
+				"new-renta",
+				"app/application/views/mailing/new-rental-order.php"
+			],
+			[
+				"programmes",
+				"app/application/classes/controller/s25/programmes.php"
+			],
+			[
+				"evnets",
+				"app/application/classes/controller/s25/events.php"
+			],
+			[
+				"eventform",
+				"app/application/views/s25/events/_form.php"
+			],
+			[
+				"forms.scss",
+				"app/public/assets/cineworks/styles/_forms.scss"
+			],
+			[
+				"memberform",
+				"app/application/views/cineworks/pages/connect/_member_forms.php"
+			],
+			[
+				"filmd",
+				"app/application/views/cineworks/pages/see/_film-details.php"
+			],
+			[
+				"laout",
+				"app/application/views/cineworks/layout.php"
+			],
+			[
+				"facilitform",
+				"app/application/views/s25/facilities/_form.php"
+			],
+			[
+				"contact",
+				"app/application/views/cineworks/pages/contact.php"
+			],
+			[
+				"attend",
+				"app/application/classes/controller/cineworks/attend.php"
+			],
+			[
+				"programmedeta",
+				"app/application/views/cineworks/pages/attend/_programme-details.php"
+			],
+			[
+				"programmesindex",
+				"app/application/views/s25/programmes/index.php"
+			],
+			[
+				"authenticate",
+				"app/application/classes/controller/s25/authenticated.php"
+			],
+			[
+				"programmesform",
+				"app/application/views/s25/programmes/_form.php"
+			],
+			[
+				"upoad",
+				"app/application/classes/image/upload.php"
+			],
+			[
+				"image",
+				"app/modules/image/classes/kohana/image.php"
+			],
+			[
+				"peopleform",
+				"app/application/views/s25/people/_form.php"
+			],
+			[
+				"equipform",
+				"app/application/views/s25/equipment/_form.php"
+			],
+			[
+				"articleform",
+				"app/application/views/s25/articles/_form.php"
+			],
+			[
+				"programform",
+				"app/application/views/s25/programmes/_form.php"
+			],
+			[
+				"eventsform",
+				"app/application/views/s25/events/_form.php"
+			],
+			[
+				"scripts",
+				"app/public/assets/cms/javascripts/scripts.js"
+			],
+			[
+				"dropkick",
+				"app/public/assets/cineworks/scripts/vendor/jquery.dropkick.js"
+			],
+			[
+				"new-film",
+				"app/application/views/mailing/new-film.php"
+			],
+			[
+				"filmfomr",
+				"app/application/views/s25/films/_form.php"
+			],
+			[
+				"new-rent",
+				"app/application/views/mailing/new-rental-order.php"
+			],
+			[
+				"new-ad",
+				"app/application/views/mailing/new-wanted-ad.php"
+			],
+			[
+				"new-fl",
+				"app/application/views/mailing/new-film.php"
+			],
+			[
+				"modeluser",
+				"app/modules/s25/classes/model/user.php"
+			],
+			[
+				"new-want",
+				"app/application/views/mailing/new-wanted-ad.php"
+			],
+			[
+				"modelcategory",
+				"app/application/classes/model/category.php"
+			],
+			[
+				"member",
+				"app/application/views/cineworks/pages/connect/_member_forms.php"
+			],
+			[
+				"members",
+				"app/application/views/cineworks/pages/connect/_members.php"
+			],
+			[
+				"user",
+				"app/modules/s25/classes/model/core/user.php"
+			],
+			[
+				"conne",
+				"app/application/classes/controller/cineworks/connect.php"
+			],
+			[
+				"exception",
+				"app/application/classes/kohana/exception.php"
+			],
+			[
+				"except",
+				"app/application/classes/kohana/exception.php"
+			],
+			[
+				"about",
+				"app/application/views/cineworks/pages/about.php"
+			],
+			[
+				"carou",
+				"app/public/assets/cineworks/styles/_carousel.scss"
+			],
+			[
+				"blac",
+				"app/public/bower_components/jquery.BlackAndWhite/jquery.BlackAndWhite.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/Clients/Seven25/Cineworks/Web/site-kohana-3.2/cineworks.sublime-project"
+			],
+			[
+				"oregon",
+				"~/Projects/Motherlowed/Oregon-Manifest/web/oregon-manifest/oregon-manifest.sublime-project"
+			],
+			[
+				"loud",
+				"~/Projects/Clients/Seven25/LOUD Business/Web/loudbusiness.com/loud.sublime-project"
+			],
+			[
+				"lou",
+				"~/Projects/Clients/Seven25/LOUD Business/Web/loudbusiness.com/loud.sublime-project"
+			],
+			[
+				"zane",
+				"~/Projects/Me/zanetaylor.me/zanetaylor.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

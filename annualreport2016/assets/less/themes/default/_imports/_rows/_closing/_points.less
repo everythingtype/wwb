@@ -1,0 +1,71 @@
+.row-points
+{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @media screen and (max-width: @screen-sm) {
+    margin-bottom: 0;
+  }
+  .col-item
+  {
+    padding: 0;
+    @media screen and (max-width: @screen-sm) {
+      //border-bottom: dotted 1px @white;
+      margin-bottom: 15px;
+      padding-bottom: 30px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .top
+    {
+      position: relative;
+      .image
+      {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        img
+        {
+          width: 102px;
+          height: auto;
+        }
+      }
+      .dotted-line
+      {
+        position: absolute;
+        bottom: 10px;
+        height: 1px;
+        width: 100%;
+        border: none;
+        border-top: dotted 1px @white;
+            @media screen and (max-width: @screen-xs) {
+              //display: none;
+            }
+      }
+    }
+    .bottom
+    {
+      text-align: center;
+      margin-top: 26px;
+      color:@white;
+      font-size: 16px;
+      .sans-serif();
+      padding-left: 15px;
+      padding-right: 15px;
+      .title
+      {
+        font-weight: bold;
+        @media screen and (max-width: @screen-sm) {
+          font-size: 15px;
+        }
+      }
+      .text
+      {
+        
+        @media screen and (max-width: @screen-sm) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

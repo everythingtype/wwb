@@ -1,0 +1,111 @@
+.accordion-container.financial-accordion
+{
+  .panel-group
+  {
+    .panel
+    {
+      .panel-collapse.main-panel-content
+      {
+        .panel-body
+        {
+          .inner-panel
+          {
+            .inner-panel-panel
+            {
+              //heading
+              .inner-panel-panel-heading
+              {
+
+                background-color: @white;
+                margin-bottom: 10px;
+                .inner-panel-panel-heading-column
+                {
+                  padding: 20px;
+                  @media screen and (min-width: @screen-sm) {
+                    padding: 30px;
+                  }
+                  &.right
+                  {
+                    border-left: dotted 1px @gray;
+                  }
+                  h3.column-title
+                  {
+                    .serif();
+                    font-weight: normal;
+                    font-size: 22px;
+                    color:@gray;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 30px;
+                    padding-bottom: 26px;
+                    border-bottom: solid 2px @blue;
+                  }
+                  /**.btns
+                  {
+                    .btn-row
+                    {
+                      margin: 0 12px 12px 0;
+                    }
+                    .btn
+                    {
+                      .border-radius(20px);
+                      font-weight: bold;
+                      line-height: 1em;
+                      padding: 5px 15px;
+                      font-size: 16px;
+                      @media screen and (max-width: @screen-sm) {
+                        font-size: 14px;
+                      }
+                      &.btn-solid
+                      {
+                        background-color: @blue;
+                        color: @white;
+                      }
+                      &.btn-dotted
+                      {
+                        color: @blue;
+                        border: 1px dotted @gray;
+                        background-color: transparent;
+                        &:hover,&:active
+                        {
+                          background-color: @blue;
+                          border: 1px solid @blue;
+                          color: @white;
+                        }
+                      }
+                      &[aria-expanded='true']
+                      {
+                        background-color: @blue!important;
+                        border: 1px solid @blue!important;
+                        color: @white!important;
+                      }
+                    }
+                  }**/
+                }
+              }
+
+              //  END: Heading
+
+
+              .inner-panel-panel-collapse
+              {
+                background-color: @white;
+                .panel-body
+                {
+                  padding: 30px;
+                  .panel-data-img
+                  {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+              }
+
+            }
+          }
+          //  END: INNER PANEL
+        }
+      }
+    }
+  }
+}

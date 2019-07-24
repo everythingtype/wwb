@@ -1,0 +1,141 @@
+.im-global-map
+{
+  margin-bottom: 30px;
+  .panel-group
+  {
+    .border-radius(0);
+    background-color: @blue;
+    border: none;
+    margin: 0;
+    .panel
+    {
+      border: none;
+      background-color: transparent;
+      .border-radius(0);
+      .main-panel-content
+      {
+        .panel-body
+        {
+          padding: 0;
+          .inner-panel
+          {
+            .inner-panel-panel
+            {
+              border: none;
+              .panel-tabs-col
+              {
+                @media screen and (max-width: @screen-sm)
+                {
+                  padding: 20px;
+                }
+                @media screen and (min-width: @screen-sm)
+                {
+                  padding: 30px;
+                }
+                .inner
+                {
+                  a.tab
+                  {
+                    &[aria-expanded="true"]
+                    {
+                      .opacity(1);
+                    }
+                    &[aria-expanded="false"]
+                    {
+                      .opacity(.5);
+                    }
+                    color: @white;
+                    text-decoration: none;
+                    h3
+                    {
+                      color: @white;
+                      padding: 20px 0;
+                      border-bottom:solid 1px @white;
+                      width: 100%;
+                      .text
+                      {
+                        display: inline-block;
+                        max-width: 80%;
+                      }
+                      .arrow
+                      {
+                        text-align: right;
+                        float: right;
+                        img
+                        {
+                          width: 17px;
+                          height: auto;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .panel-tab-content-col
+              {
+                padding: 0;
+                .inner-col
+                {
+                  @media screen and (max-width: @screen-sm)
+                  {
+                    padding: 20px;
+                  }
+                  @media screen and (min-width: @screen-sm)
+                  {
+                    padding: 30px;
+                  }
+
+                  h3.title
+                  {
+                    margin:0;
+                    padding: 20px 0;
+                    color:@white;
+                    border-top: dotted 1px @white;
+                  }
+
+                  .list
+                  {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    .item
+                    {
+                      padding: 0;
+                      margin: 0;
+                      .link
+                      {
+                        .serif();
+                        margin-bottom: 4px;
+                        color: @white;
+                        font-style: italic;
+                        @media screen and (max-width: @screen-sm)
+                        {
+                          font-size: 14px;
+                        }
+                        @media screen and (min-width: @screen-sm)
+                        {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+
+                  &.left
+                  {
+
+                  }
+                  &.right
+                  {
+
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

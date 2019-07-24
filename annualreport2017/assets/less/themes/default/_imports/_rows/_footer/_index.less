@@ -1,0 +1,95 @@
+#footer
+{
+  background-color: @dark-blue;
+  .row-1
+  {
+    text-align: center;
+    padding: 70px 0 60px 0;
+    .social-media
+    {
+      .social-media-links
+      {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li
+        {
+          display: inline;
+          font-size: 16px;
+          font-weight: bold;
+          color: @white;
+          padding-left: 5px;
+          padding-right: 5px;
+          &.text {
+            @media screen and (max-width: @screen-sm) {
+              display: block;
+            } 
+          }
+          &.social-link
+          {
+            a {
+              img
+              {
+                width: 36px;
+                height: 36px;
+                .border-radius(100%);
+              }
+              &:hover {
+                opacity: .8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .row-2
+  {
+    @media screen and (max-width: @screen-sm) {
+      text-align: center;
+    }
+    .footer-logo
+    {
+      @media screen and (max-width: @screen-sm) {
+        border-bottom: 1px solid @white;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        display: block;
+      }
+      img
+      {
+        width: 214px;
+        height: auto;
+        max-width: 100%;
+        @media screen and (max-width: @screen-sm) {
+         width: 240px;
+        }
+      }
+    }
+    .nav
+    {
+      @media screen and (max-width: @screen-sm) {
+        display: block;
+      }
+      .annual-report-btn
+      {
+        font-size: 15px;
+        font-weight: bold;
+        color: @white;
+        padding-top: 0;
+        border-right: solid 1px @white;
+        padding-right: 10px;
+        @media screen and (max-width: @screen-sm) {
+          border-right: none;
+        }
+        em {
+          font-weight: normal;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

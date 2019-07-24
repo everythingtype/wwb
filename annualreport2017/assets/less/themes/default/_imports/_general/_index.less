@@ -1,0 +1,58 @@
+@import "_fonts";
+
+a {
+	&:focus, &:active {
+		outline: none;
+	}
+}
+
+.add-wm-animate-css {
+  opacity: 0;
+}
+
+// missing progress bar styles
+.progress-wrap {
+  position: fixed;
+  z-index: 9999999997;
+  left: 0;
+  height: 100vh;
+  background-color: @white;
+  width: 17px;
+}
+
+.progress-dot {
+  position: fixed;
+  z-index: 9999999997;
+  left: 0;
+  height: 100vh;
+  background-color: @royal-blue;
+  width: 17px;
+  background-size: 6px 6px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: background-color 200ms ease-out;
+}
+
+.progress-bar.vertical {
+  height: auto;
+  width: 17px;
+}
+
+.progress-bar.top {
+  top: 0;
+}
+
+.progress-bar {
+  background-color: @blue;
+  position: fixed;
+  z-index: 9999999999;
+  left: 0;
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  transition: background-color 200ms ease-out;
+  box-shadow: none;
+}

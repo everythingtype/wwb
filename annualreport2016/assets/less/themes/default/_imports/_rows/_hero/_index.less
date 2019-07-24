@@ -1,0 +1,189 @@
+#hero
+{
+  background-color: @blue;
+  position: relative;
+  z-index: 100;
+  padding-bottom: 18%;
+  overflow: hidden;
+  @media screen and (min-width: @screen-xs) and (max-width: @screen-sm) {
+    padding-bottom: 30%;
+  }
+  @media screen and (max-width: @screen-xs) {
+    padding-bottom: 24%;
+  }
+  .row.bg
+  {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    @media screen and (max-width: @screen-sm) {
+      max-width: 80%;
+      margin-left: 10%;
+      margin-right: 10px;
+    }
+    img
+    {
+      width: 100%;
+      height: auto;
+    }
+    .anim-wrap {
+      position: relative;
+      padding: 0!important;
+    }
+    img.anim {
+      position: absolute;
+      top: 10px;
+      &.circle {
+        z-index: 101;
+        animation-duration: 2s;
+      }
+      &.oval {
+        z-index: 102;
+        -webkit-animation-delay: .5s; /* Safari 4.0 - 8.0 */
+        animation-delay: .5s;
+        animation-duration: 1.25s;
+      }
+      &.square {
+        z-index: 103;
+        -webkit-animation-delay: 1.25s; /* Safari 4.0 - 8.0 */
+        animation-delay: 1.25s;
+        animation-duration: 1.25s;
+      }
+      &.watermark {
+        z-index: 105;
+        -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+        animation-delay: 3s;
+        animation-duration: 1.5s;  
+      }      
+      &.blue {
+        z-index: 104;
+        -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+        animation-delay: 4s;
+        animation-duration: 2s;
+      }
+
+      &.blue-2 {
+        z-index: 106;
+        -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+        animation-delay: 5s;
+        animation-duration: 1s;
+      }
+      &.lines {
+        z-index: 107;
+        -webkit-animation-delay: 5.25s; /* Safari 4.0 - 8.0 */
+        animation-delay: 5.25s;
+        animation-duration: 1s; 
+      }
+      &.blue-3 {
+        z-index: 108;
+        -webkit-animation-delay: 5.5s; /* Safari 4.0 - 8.0 */
+        animation-delay: 5.5s;
+        animation-duration: 1s;
+        position: relative;
+        padding-bottom: 40px;
+      }
+    }
+  }
+  .row-content
+  {
+    //padding-top: (470px/2)-(188px/2);
+    padding-top: 3%;
+    //padding-bottom: (470px/2)-(188px/2)+60px;
+    padding-bottom: 0;
+    h1
+    {
+      margin-left: 30px;
+      text-align: left;
+      max-width: 600px;
+      z-index: 120;
+      position: relative;
+      -webkit-animation-delay: 5.25s; /* Safari 4.0 - 8.0 */
+      animation-delay: 5.25s;
+      animation-duration: 1s;
+      margin-top: 15%;
+      font-style: italic;
+      @media screen and (max-width: @screen-sm) {
+        margin-left: 25px;
+        margin-top: 30%;
+      }
+      span {
+        //background-color: @blue;
+      }
+    }
+  }
+  .row.scroll
+  {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    bottom:60px;
+    width: 100%;
+    z-index: 120;
+    @media screen and (max-width: @screen-xs) {
+      bottom:20px;
+    }
+    .scroll-items
+    {
+      -webkit-animation-delay: 6s; /* Safari 4.0 - 8.0 */
+        animation-delay: 6s;
+        animation-duration: 1s; 
+      a
+      {
+        text-decoration: none;
+        color: @white;
+        display: block;
+        float: left;
+        margin-left: 21px;
+        @media screen and (max-width: @screen-sm) {
+          margin-left: 24px;
+        }
+      }
+      .circle
+      {
+        background-color: @white;
+        .border-radius(50px);
+        width: 50px;
+        height:50px;
+        text-align: center;
+        -webkit-animation-delay: 7s; /* Safari 4.0 - 8.0 */
+        animation-delay: 7s;
+        -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s; 
+        @media screen and (max-width: @screen-xs) {
+          width: 30px;
+          height:30px;
+        }
+        img
+        {
+          width: 18px;
+          height: 30px;
+          margin-top: 9px;
+          @media screen and (max-width: @screen-xs) {
+            width: 8px;
+            height: 13px;
+            margin-top: 4px;
+          }
+        }
+      }
+      .text
+      {
+        display: block;
+        float: left;
+        .serif();
+        font-size: 16px;
+        line-height: 50px;
+        font-style: italic;
+        color: @white;
+        margin-left: 10px;
+        -webkit-animation-delay: 9s; /* Safari 4.0 - 8.0 */
+        animation-delay: 9s;
+        @media screen and (max-width: @screen-sm) {
+          font-size: 12px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

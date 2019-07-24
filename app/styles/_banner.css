@@ -1,0 +1,306 @@
+.banner {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+
+    .logo {
+        position: absolute;
+        top: 1.5em;
+        left: 1.5em;
+
+        img {
+            display: inline-block;
+            height: 1.25em;
+        }
+    }
+
+    .title {
+        margin: 1.25em auto 0 auto;
+        text-align: center;
+        @include font-size(14px);
+    }
+
+    .ind-nav {
+        display: none;
+        position: absolute;
+        top: 1.15rem;
+        right: 6rem;
+
+        &.active {
+            display: block;
+
+            a:not(.ind-intro) {
+                -webkit-animation-duration: 0.7s;
+                animation-duration: 0.7s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+
+                -webkit-animation-name: pulse-in;
+                animation-name: pulse-in;
+
+                .ring {
+                    -webkit-animation-duration: 0.5s;
+                    animation-duration: 0.5s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+
+                    -webkit-animation-name: pulse-ring;
+                    animation-name: pulse-ring;
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: none;
+                margin: 0 0 0 7px;
+            }
+
+            li.active {
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+                position: relative;
+                top: -6px;
+                width: 28px;
+                height: 28px;
+                margin: -4px 0 0 0;
+                border-radius: 28px;
+                background: #fff;
+                cursor: pointer;
+                background-color: #fff;
+                background-repeat: no-repeat;
+
+                .ring {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 28px;
+                    border: 2px solid #fff;
+                }
+            }
+
+            .ind-intro {
+                display: inline-block;
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+
+                &.active a {
+                    -webkit-animation-duration: 0.7s;
+                    animation-duration: 0.7s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+
+                    -webkit-animation-name: pulse-in;
+                    animation-name: pulse-in;
+
+                    .ring {
+                        -webkit-animation-duration: 0.5s;
+                        animation-duration: 0.5s;
+                        -webkit-animation-fill-mode: both;
+                        animation-fill-mode: both;
+
+                        -webkit-animation-name: pulse-ring;
+                        animation-name: pulse-ring;
+                    }
+                }
+
+                a {
+                    top: 0;
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+
+            .ind-intro {
+                a {
+                    background-image: url('../images/icon-home.png');
+                    background-position: -31px 8px;
+                }
+
+                &:hover a {
+                    background-position: 10px 8px;
+                }
+            }
+
+            .ind-1 {
+                a {
+                    background-image: url('../images/icon-ribbon.png');
+                    background-position: -19px;
+                    
+                    -webkit-animation-delay: 2s;
+                    animation-delay: 2s;
+                }
+
+                &.current a,
+                &:hover a {
+                    background-position: 8px;
+                }
+
+                .ring {
+                    -webkit-animation-delay: 2.3s;
+                    animation-delay: 2.3s;
+                }
+            }
+
+            .ind-2 {
+                a {
+                    background-image: url('../images/icon-money.png');
+                    background-position: -21px;
+
+                    -webkit-animation-delay: 2.8s;
+                    animation-delay: 2.8s;
+                }
+
+                &.current a,
+                &:hover a {
+                    background-position: 7px;
+                }
+
+                .ring {
+                    -webkit-animation-delay: 3.1s;
+                    animation-delay: 3.1s;
+                }
+            }
+
+            .ind-3 {
+                a {
+                    background-image: url('../images/icon-heart.png');
+                    background-position: -19px;
+
+                    -webkit-animation-delay: 3.6s;
+                    animation-delay: 3.6s;
+                }
+
+                &.current a,
+                &:hover a {
+                    background-position: 8px;
+                }
+
+                .ring {
+                    -webkit-animation-delay: 3.9s;
+                    animation-delay: 3.9s;
+                }
+            }
+
+            .ind-4 {
+                a {
+                    background-image: url('../images/icon-arrow.png');
+                    background-position: -16px;
+
+                    -webkit-animation-delay: 4.4s;
+                    animation-delay: 4.4s;
+                }
+
+                &.current a,
+                &:hover a {
+                    background-position: 8px;
+                }
+
+                .ring {
+                    -webkit-animation-delay: 4.7s;
+                    animation-delay: 4.7s;
+                }
+            }
+
+            .ind-5 {
+                a {
+                    background-image: url('../images/icon-clipboard.png');
+                    background-position: -37px;
+
+                    -webkit-animation-delay: 5.2s;
+                    animation-delay: 5.2s;
+                }
+
+                &.current a,
+                &:hover a {
+                    background-position: 4px;
+                }
+
+                .ring {
+                    -webkit-animation-delay: 5.5s;
+                    animation-delay: 5.5s;
+                }
+            }
+        }
+    }
+
+    .share-btn {
+        position: absolute;
+        right: 1.25rem;
+        top: 1.25rem;
+        padding: 5px 8px;
+        color: $gray-dark;
+        font-weight: bold;
+        @include font-size(11px);
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.10);
+        cursor: pointer;
+    }
+
+    .sharebox {
+        display: none;
+        position: absolute;
+        right: 1.25rem;
+        top: 3.25rem;
+        width: 250px;
+        padding: 16px;
+        @include font-size(14px);
+        background: #fff;
+
+        a {
+            color: $gray-dark;
+            text-decoration: none;
+        }
+        .social {
+            display: inline-block;
+            width: 49%;
+            margin: 0 0 14px 0;
+            font-weight: 600;
+        }
+        i {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            margin: 0 8px 0 0;
+            text-align: center;
+            line-height: 20px;
+            @include font-size(12px);
+            border: 1px solid transparent;
+            border-radius: 30px;
+        }
+        .icon-facebook {
+            color: #3b5998;
+            border-color: #3b5998;
+        }
+        .icon-twitter {
+            color: #00aced;
+            border-color: #00aced;
+        }
+        .icon-linkedin {
+            text-indent: 2px;
+            color: #007bb6;
+            border-color: #007bb6;
+        }
+        .icon-google-plus {
+            color: #dd4b39;
+            border-color: #dd4b39;
+        }
+        p {
+            margin: 1.8rem 0 0 0;
+        }
+    }
+
+}

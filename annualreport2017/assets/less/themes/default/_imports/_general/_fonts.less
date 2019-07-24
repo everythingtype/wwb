@@ -1,0 +1,77 @@
+body
+{
+  .sans-serif();;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 100;
+  color: @gray;
+  @media screen and (min-width: @screen-xs) and (max-width: @screen-md) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: @screen-xs) {
+    font-size: 14px;
+  }
+}
+h1
+{
+  .sans-serif();
+  line-height: 1.1em;
+  border-left: 1px solid @white;
+  color: @white;
+  @media screen and (max-width: @screen-xs) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: @screen-md) {
+    padding: 20px 30px;
+    font-size: 54px;
+  }
+  @media screen and (max-width: @screen-md) {
+    padding: 15px 20px;
+  }
+  @media screen and (min-width: @screen-xs) and (max-width: @screen-md) {
+    font-size: 36px;
+  }
+}
+
+
+h2
+{
+  .sans-serif();
+  line-height: 1.1em;
+  color: @gray;
+  @media screen and (min-width: @screen-md) {
+    font-size: 42px;
+  }
+  @media screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: @screen-xs) and (max-width: @screen-sm) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: @screen-xs) {
+    font-size: 22px;
+  }
+}
+
+h3
+{
+  .sans-serif();
+  line-height: 1.3em;
+  color: @gray;
+
+  @media screen and (max-width: @screen-xs) {
+    font-size: 18px;
+    display: inline-block;
+  }
+  @media screen and (min-width: @screen-xs) {
+    font-size: 22px;
+  }
+
+}
+
+small
+{
+  font-size: 11px;
+  .sans-serif();;
+  color: @gray-6;
+}
